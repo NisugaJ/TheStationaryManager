@@ -26,4 +26,22 @@
     <string name="new_type">New Type</string>
     <string name="add">Add</string>
     <string name="update_the_selected_expense_type">Update the selected Expense Type</string>
+
+
+    <!--Stationery Management-->
+    <string name="PAtxt1">Select Category</string>
+
+    <string-array name="combo_box1">
+        <item>Books</item>
+        <item>Pens</item>
+        <item>School Items</item>
+        <item>Office Items</item>
+    </string-array>
+
+    <string name="PAtxt2">Product Name</string>
+    <string name="PAtxt3">Product Code</string>
+    <string name="PAtxt4">Cost Price</string>
+    <string name="PAtxt5">Selling Price</string>
+    <string name="PAtxt6">Quantity</string>
+    <string name="PAbtn1">Add Products</string>
 </resources>

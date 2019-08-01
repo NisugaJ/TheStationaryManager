@@ -24,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 case R.id.navigation_stationery:
                     mTextMessage.setText(R.string.title_stationery);
+                    Intent intent1 = new Intent(MainActivity.this, AddProducts.class);
+                    startActivity(intent1);
                     return true;
                 case R.id.navigation_printing:
                     mTextMessage.setText(R.string.title_printing);
