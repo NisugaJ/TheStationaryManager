@@ -48,4 +48,12 @@
     <string name="PAtxt6">Quantity</string>
     <string name="PAbtn1">Add Products</string>
     <string name="set_date">Set Date</string>
+
+    <string name="SAtxt1">Product Code</string>
+    <string name="SAtxt2">Product Name</string>
+    <string name="SAtxt3">Select Category</string>
+    <string name="SAtxt4">Selling Price</string>
+    <string name="SAtxt5">Quantity</string>
+    <string name="SAtxt6">Select Date</string>
+    <string name="SAbtn1">Add Sales</string>
 </resources>
