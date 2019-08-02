@@ -30,4 +30,21 @@
     <string name="total_expenses">Total Expenses</string>
     <string name="rs_2500_00">Rs. 2500.00</string>
     <string name="grid_image">Grid Image</string>
+
+    <!--Stationery Management-->
+    <string name="PAtxt1">Select Category</string>
+
+    <string-array name="combo_box1">
+        <item>Books</item>
+        <item>Pens</item>
+        <item>School Items</item>
+        <item>Office Items</item>
+    </string-array>
+
+    <string name="PAtxt2">Product Name</string>
+    <string name="PAtxt3">Product Code</string>
+    <string name="PAtxt4">Cost Price</string>
+    <string name="PAtxt5">Selling Price</string>
+    <string name="PAtxt6">Quantity</string>
+    <string name="PAbtn1">Add Products</string>
 </resources>
