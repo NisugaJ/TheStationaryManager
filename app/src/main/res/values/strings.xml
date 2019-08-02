@@ -47,4 +47,5 @@
     <string name="PAtxt5">Selling Price</string>
     <string name="PAtxt6">Quantity</string>
     <string name="PAbtn1">Add Products</string>
+    <string name="set_date">Set Date</string>
 </resources>

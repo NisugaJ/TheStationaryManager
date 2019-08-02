@@ -16,13 +16,8 @@ import android.widget.GridView;
 import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-
-import java.util.Objects;
-
-import static com.example.stationerymanager.R.id.add;
 import static com.example.stationerymanager.R.id.floatingActionButton_addExpense;
 import static com.example.stationerymanager.R.id.gridExpenseTypes;
-import static com.example.stationerymanager.R.id.start;
 
 
 public class Expenses extends Fragment {
@@ -94,4 +89,6 @@ public class Expenses extends Fragment {
         // Inflate the layout for this fragment
         return view;
     }
+
+
 }
