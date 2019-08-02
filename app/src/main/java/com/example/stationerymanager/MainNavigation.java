@@ -1,5 +1,6 @@
 package com.example.stationerymanager;
 
+import android.content.Intent;
 import android.os.Bundle;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import androidx.appcompat.app.AppCompatActivity;
