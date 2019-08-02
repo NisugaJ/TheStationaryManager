@@ -45,7 +45,7 @@
             android:layout_height="33dp"
             android:layout_marginStart="8dp"
             android:layout_marginLeft="8dp"
-            android:contentDescription="Set Date"
+            android:contentDescription="@string/set_date"
             app:layout_constraintBottom_toBottomOf="@+id/editText_Date"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.533"
@@ -228,7 +228,7 @@
             android:enabled="false"
             android:textAllCaps="false"
             android:textSize="14sp"
-            android:visibility="visible"
+            android:visibility="invisible"
             app:layout_constraintBaseline_toBaselineOf="@+id/btnNewType3"
             app:layout_constraintEnd_toEndOf="parent" />
 
@@ -243,7 +243,7 @@
             android:enabled="false"
             android:textAllCaps="false"
             android:textSize="14sp"
-            android:visibility="visible"
+            android:visibility="invisible"
             app:layout_constraintBaseline_toBaselineOf="@+id/btnNewType2"
             app:layout_constraintEnd_toStartOf="@+id/btnNewType4"
             app:layout_constraintHorizontal_bias="0.5"
@@ -258,7 +258,7 @@
             android:enabled="false"
             android:textAllCaps="false"
             android:textSize="14sp"
-            android:visibility="visible"
+            android:visibility="invisible"
             app:layout_constraintBaseline_toBaselineOf="@+id/btnNewType1"
             app:layout_constraintEnd_toStartOf="@+id/btnNewType3"
             app:layout_constraintHorizontal_bias="0.5"
@@ -271,12 +271,12 @@
             android:layout_marginStart="8dp"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="8dp"
+            android:enabled="false"
             android:textAllCaps="false"
             android:textSize="14sp"
-            android:visibility="visible"
+            android:visibility="invisible"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button13"
-            android:enabled="false" />
+            app:layout_constraintTop_toBottomOf="@+id/button13" />
 
         <Button
             android:id="@+id/button13"
