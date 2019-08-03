@@ -33,6 +33,7 @@ public class MainNavigation extends AppCompatActivity {
                     break;
                 case R.id.navigation_stationery:
                     title = getString(R.string.title_stationery);
+                    Frg = new Stationery();
                     break;
                 case R.id.navigation_printing:
                     title = getString(R.string.title_printing);

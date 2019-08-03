@@ -56,4 +56,17 @@
     <string name="SAtxt5">Quantity</string>
     <string name="SAtxt6">Select Date</string>
     <string name="SAbtn1">Add Sales</string>
+
+    <string name="UPtxt2">Product Name</string>
+    <string name="UPtxt3">Product Code</string>
+    <string name="UPtxt4">Cost Price</string>
+    <string name="UPtxt5">Selling Price</string>
+    <string name="UPtxt6">Quantity</string>
+    <string name="UPbtn1">Update Products</string>
+
+    <string name="t1">BOOKS</string>
+    <string name="t2">PENS</string>
+    <string name="t3">SCHOOL ITEMS</string>
+    <string name="t4">OFFICE ITEMS</string>
+
 </resources>

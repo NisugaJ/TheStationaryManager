@@ -9,7 +9,9 @@
         android:roundIcon="@drawable/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AddSales"></activity>
+        <activity android:name=".UpdateProducts" />
+        <activity android:name=".AddProducts" />
+        <activity android:name=".AddSales" />
         <activity android:name=".MainNavigation" />
         <activity android:name=".AddExpenses" />
         <activity
