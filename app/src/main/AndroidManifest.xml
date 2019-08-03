@@ -9,6 +9,8 @@
         android:roundIcon="@drawable/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Calls"></activity>
+        <activity android:name=".Fax"></activity>
         <activity android:name=".AddSales"></activity>
         <activity android:name=".MainNavigation" />
         <activity android:name=".AddExpenses" />
