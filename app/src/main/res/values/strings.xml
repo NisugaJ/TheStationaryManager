@@ -49,6 +49,9 @@
     <string name="PAbtn1">Add Products</string>
     <string name="set_date">Set Date</string>
 
+    <string name="title_activity_fax">Fax</string>
+    <string name="title_activity_calls">Calls</string>
+
     <string name="SAtxt1">Product Code</string>
     <string name="SAtxt2">Product Name</string>
     <string name="SAtxt3">Select Category</string>
