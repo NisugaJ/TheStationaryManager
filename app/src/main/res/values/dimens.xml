@@ -8,4 +8,5 @@
         <item>Weekly</item>
         <item>Monthly</item>
     </string-array>
+    <dimen name="fab_margin">16dp</dimen>
 </resources>
