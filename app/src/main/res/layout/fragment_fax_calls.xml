@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".faxCalls">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="543dp" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:padding="10sp"
+        android:text="Month - July : Rs 12500 "
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="150dp"
+        android:text="Fax"
+        android:drawableTop="@drawable/ic_icons8_fax"/>
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="150dp"
+        android:text="Calls" android:drawableTop="@drawable/ic_call_black_24dp"/>
+
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginRight="150dp"
+        android:drawableTop="@drawable/ic_history_black_24dp"
+        android:text="History"
+        android:textColor="@color/colorPrimary" />
+
+</FrameLayout>
