@@ -19,30 +19,32 @@
         android:textSize="24sp" />
 
     <Button
-        android:id="@+id/button14"
+        android:id="@+id/fax"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_marginTop="150dp"
-        android:text="Fax"
-        android:drawableTop="@drawable/ic_icons8_fax"/>
+        android:drawableTop="@drawable/ic_icons8_fax"
+        android:text="@string/btnFax" />
 
     <Button
-        android:id="@+id/button15"
+        android:id="@+id/call"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_marginLeft="210dp"
         android:layout_marginTop="150dp"
-        android:text="Calls" android:drawableTop="@drawable/ic_call_black_24dp"/>
+        android:drawableTop="@drawable/ic_call_black_24dp"
+        android:text="@string/btnCalls" />
 
     <Button
-        android:id="@+id/button16"
+        android:id="@+id/FCHistory"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginLeft="150dp"
         android:layout_marginTop="420dp"
         android:layout_marginRight="150dp"
+        android:background="@color/cardview_shadow_end_color"
         android:drawableTop="@drawable/ic_history_black_24dp"
-        android:text="History"
+        android:text="@string/btnFCHistory"
         android:textColor="@color/colorPrimary" />
 
 </FrameLayout>

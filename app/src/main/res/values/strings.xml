@@ -59,4 +59,14 @@
     <string name="SAtxt5">Quantity</string>
     <string name="SAtxt6">Select Date</string>
     <string name="SAbtn1">Add Sales</string>
+
+    <string name="btnFax">Fax</string>
+    <string name="btnCalls">Call</string>
+    <string name="btnFCHistory">History</string>
+
+    <string name="btnAddFax">Add</string>
+    <string name="btnCancelFax">Cancel</string>
+
+    <string name="btnAddCall">Add</string>
+    <string name="btnCancelCall">Cancel</string>
 </resources>
