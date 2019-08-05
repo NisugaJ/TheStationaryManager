@@ -69,4 +69,5 @@
 
     <string name="btnAddCall">Add</string>
     <string name="btnCancelCall">Cancel</string>
+    <string name="title_activity_fchistory">FCHistory</string>
 </resources>
