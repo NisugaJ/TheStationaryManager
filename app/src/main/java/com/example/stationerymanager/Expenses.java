@@ -7,6 +7,7 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.view.menu.ActionMenuItem;
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,20 +17,15 @@ import android.widget.GridView;
 import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-
-import java.util.Objects;
-
-import static com.example.stationerymanager.R.id.add;
 import static com.example.stationerymanager.R.id.floatingActionButton_addExpense;
 import static com.example.stationerymanager.R.id.gridExpenseTypes;
-import static com.example.stationerymanager.R.id.start;
 
 
 public class Expenses extends Fragment {
     View view;
     FloatingActionButton addExpense;
     GridView grid;
-    String[] expenseTypes = {
+    static String[] expenseTypes = {
             "Rent",
             "Repair",
             "Legal",
@@ -82,6 +78,8 @@ public class Expenses extends Fragment {
                 @Override
                 public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                     Toast.makeText(getContext(), expenseTypes[i]+ " Clicked", Toast.LENGTH_SHORT).show();
+                    Intent intentToExpensesList = new Intent(getContext(), ExpensesList.class);
+                    startActivity(intentToExpensesList);
                 }
             });
 
@@ -93,5 +91,12 @@ public class Expenses extends Fragment {
         });
         // Inflate the layout for this fragment
         return view;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+
+
     }
 }

@@ -6,11 +6,17 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainNavigation"></activity>
-        <activity android:name=".AddExpenses" />
+
+        <activity android:name=".TimePickActivity" android:screenOrientation="portrait" />
+        <activity android:name=".ExpensesList" android:screenOrientation="portrait"  />
+        <activity android:name=".Calls" android:screenOrientation="portrait"  />
+        <activity android:name=".Fax" android:screenOrientation="portrait" />
+        <activity android:name=".AddSales" android:screenOrientation="portrait" />
+        <activity android:name=".MainNavigation" android:screenOrientation="portrait" />
+        <activity android:name=".AddExpenses" android:screenOrientation="portrait" />
         <activity
             android:name=".LaunchActivity"
             android:label="@string/app_name">
