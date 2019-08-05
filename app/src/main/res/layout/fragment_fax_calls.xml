@@ -45,6 +45,7 @@
         android:background="@color/cardview_shadow_end_color"
         android:drawableTop="@drawable/ic_history_black_24dp"
         android:text="@string/btnFCHistory"
-        android:textColor="@color/colorPrimary" />
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary" />
 
 </FrameLayout>
