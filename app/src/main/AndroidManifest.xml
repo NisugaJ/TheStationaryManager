@@ -16,6 +16,7 @@
         <activity android:name=".Fax" android:screenOrientation="portrait" />
         <activity android:name=".AddSales" android:screenOrientation="portrait" />
         <activity android:name=".MainNavigation" android:screenOrientation="portrait" />
+        <activity android:name=".AddService1"></activity>
         <activity android:name=".AddExpenses" android:screenOrientation="portrait" />
         <activity
             android:name=".LaunchActivity"

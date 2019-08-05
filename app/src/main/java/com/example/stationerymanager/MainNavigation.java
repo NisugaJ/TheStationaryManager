@@ -37,8 +37,18 @@ public class MainNavigation extends AppCompatActivity {
                     startActivity(intent);
                     break;
                 case R.id.navigation_printing:
-                    title = getString(R.string.title_printing);
-                    break;
+                    setTitle(R.string.title_printing);
+//                    Intent intent = new Intent(getApplicationContext(), ServiceUpdate1.class);
+//                    startActivity(intent);
+                    frag = findViewById(R.id.fragment2);
+                    frag.removeAllViews();
+                    ServiceHomeFrag serviceFrg = new ServiceHomeFrag();
+                    fm = getSupportFragmentManager();
+                    ft = fm.beginTransaction();
+                    ft.add(R.id.fragment2, serviceFrg);
+                    ft.commit();
+                    Toast.makeText(getApplicationContext(), "printing Clicked", Toast.LENGTH_SHORT).show();
+                    return true;
                 case R.id.navigation_faxAndCalls:
                     title = getString(R.string.title_faxAndCalls);
                     break;
