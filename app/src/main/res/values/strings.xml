@@ -120,9 +120,9 @@
     <string name="textsale5">Quantity</string>
     <string name="button3">Date</string>
     <string name="btnsale1">Add Sale</string>
-
-
-
+    <string name="net_expenes">Net Expenes</string>
+    <string name="net_income">Net Income</string>
+    <string name="net_profit">Net Profit</string>
 
 
 </resources>
