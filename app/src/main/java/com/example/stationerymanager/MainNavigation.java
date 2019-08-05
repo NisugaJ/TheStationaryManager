@@ -33,8 +33,7 @@ public class MainNavigation extends AppCompatActivity {
                     break;
                 case R.id.navigation_stationery:
                     title = getString(R.string.title_stationery);
-                    Intent intent = new Intent(getApplicationContext(), AddSales.class);
-                    startActivity(intent);
+
                     break;
                 case R.id.navigation_printing:
                     setTitle(R.string.title_printing);
