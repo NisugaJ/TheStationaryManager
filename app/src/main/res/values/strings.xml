@@ -68,5 +68,7 @@
     <string name="t2">PENS</string>
     <string name="t3">SCHOOL ITEMS</string>
     <string name="t4">OFFICE ITEMS</string>
+    <string name="btnNav1">Category</string>
+    <string name="btnNav2">Sales</string>
 
 </resources>
