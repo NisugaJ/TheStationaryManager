@@ -9,11 +9,7 @@
         android:roundIcon="@drawable/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".UpdateProducts" />
-        <activity android:name=".AddProducts" />
-        <activity android:name=".AddSales" />
-        <activity android:name=".MainNavigation" />
-        <activity android:name=".AddExpenses" />
+
         <activity
             android:name=".LaunchActivity"
             android:label="@string/app_name">
