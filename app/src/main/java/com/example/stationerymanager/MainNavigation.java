@@ -17,8 +17,7 @@ public class MainNavigation extends AppCompatActivity {
     private FragmentManager fm ;
     private FragmentTransaction ft;
 
-    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
-            = new BottomNavigationView.OnNavigationItemSelectedListener() {
+    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -33,8 +32,7 @@ public class MainNavigation extends AppCompatActivity {
                     break;
                 case R.id.navigation_stationery:
                     title = getString(R.string.title_stationery);
-                    Intent intent = new Intent(getApplicationContext(), AddSales.class);
-                    startActivity(intent);
+
                     break;
                 case R.id.navigation_printing:
                     setTitle(R.string.title_printing);

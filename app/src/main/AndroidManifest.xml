@@ -10,14 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".TimePickActivity" android:screenOrientation="portrait" />
-        <activity android:name=".ExpensesList" android:screenOrientation="portrait"  />
-        <activity android:name=".Calls" android:screenOrientation="portrait"  />
-        <activity android:name=".Fax" android:screenOrientation="portrait" />
-        <activity android:name=".AddSales" android:screenOrientation="portrait" />
-        <activity android:name=".MainNavigation" android:screenOrientation="portrait" />
-        <activity android:name=".AddService1"></activity>
-        <activity android:name=".AddExpenses" android:screenOrientation="portrait" />
         <activity
             android:name=".LaunchActivity"
             android:label="@string/app_name">

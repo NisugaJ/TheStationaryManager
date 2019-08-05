@@ -36,7 +36,7 @@
 
 
     <View
-        android:id="@+id/view"
+        android:id="@+id/view1"
         android:layout_width="0dp"
         android:layout_height="66dp"
         android:layout_marginTop="16dp"
