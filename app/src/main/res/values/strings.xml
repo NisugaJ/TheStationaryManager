@@ -42,13 +42,13 @@
     </string-array>
 
     <string-array name="expense_types">
-        <item >Rent</item>
-        <item >Repair</item>
-        <item >Legal</item>
-        <item >Transport</item>
-        <item >Tax</item>
-        <item >Ads</item>
-        <item >Other</item>
+        <item>Rent</item>
+        <item>Repair</item>
+        <item>Legal</item>
+        <item>Transport</item>
+        <item>Tax</item>
+        <item>Ads</item>
+        <item>Other</item>
     </string-array>
 
     <string name="PAtxt2">Product Name</string>
@@ -109,4 +109,6 @@
     <string name="button3">Date</string>
     <string name="btnsale1">Add Sale</string>
 
+    <string name ="btnCat">Category</string>
+    <string name ="btnSale">Sales</string>
 </resources>
