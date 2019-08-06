@@ -49,9 +49,15 @@ public class LaunchActivity extends AppCompatActivity {
                 if (progressStatus == 100){
                     Intent intent = new Intent(getApplicationContext(), MainNavigation.class);
                     startActivity(intent);
+                    finish();
                 }
             }
         }).start();
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
     }
 }
 

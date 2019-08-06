@@ -61,7 +61,7 @@ public class ExpensesList extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_expenses_list);
-
+        setTitle("Previous Expenses");
         listView=findViewById(R.id.expenses_list);
         expenseList = new ArrayList<>();
 

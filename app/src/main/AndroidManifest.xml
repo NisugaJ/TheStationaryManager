@@ -9,13 +9,6 @@
         android:roundIcon="@drawable/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PrintOutDisplay"></activity>
-        <activity android:name=".PhotoCopyDisplay" />
-        <activity android:name=".ServiceAddSales" />
-        <activity android:name=".BindingDisplay" />
-        <activity android:name=".LaminatingDisplay" />
-        <activity android:name=".AddServiceSales"/>
-        <activity android:name=".ServiceUpdate1"/>
 
         <activity
             android:name=".TimePickActivity"
