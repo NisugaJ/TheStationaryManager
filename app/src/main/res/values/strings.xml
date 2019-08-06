@@ -42,13 +42,13 @@
     </string-array>
 
     <string-array name="expense_types">
-        <item >Rent</item>
-        <item >Repair</item>
-        <item >Legal</item>
-        <item >Transport</item>
-        <item >Tax</item>
-        <item >Ads</item>
-        <item >Other</item>
+        <item>Rent</item>
+        <item>Repair</item>
+        <item>Legal</item>
+        <item>Transport</item>
+        <item>Tax</item>
+        <item>Ads</item>
+        <item>Other</item>
     </string-array>
 
     <string name="PAtxt2">Product Name</string>
@@ -66,6 +66,7 @@
     <string name="SAtxt5">Quantity</string>
     <string name="SAtxt6">Select Date</string>
     <string name="SAbtn1">Add Sales</string>
+
 
     <string name="UPtxt2">Product Name</string>
     <string name="UPtxt3">Product Code</string>
@@ -227,5 +228,6 @@
     <string name="textadd5">Quantity</string>
     <string name="textadd6">Service Name</string>
     <string name="btnadd1">Add Service</string>
+
 
 </resources>

@@ -9,6 +9,7 @@
         android:roundIcon="@drawable/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
     <activity android:name=".MainNavigation"/>
     <activity android:name=".ExpensesList"/>
     <activity android:name=".TimePickActivity"/>
@@ -17,6 +18,7 @@
     <activity android:name=".AddSales"/>
     <activity android:name=".AddProducts"/>
     <activity android:name=".UpdateProducts"/>
+
         <activity android:name=".PrintOutDisplay"></activity>
         <activity android:name=".PhotoCopyDisplay" />
         <activity android:name=".ServiceAddSales" />
@@ -24,10 +26,6 @@
         <activity android:name=".LaminatingDisplay" />
         <activity android:name=".AddServiceSales"/>
         <activity android:name=".ServiceUpdate1"/>
-
-
-
-
 
         <activity
             android:name=".LaunchActivity"
