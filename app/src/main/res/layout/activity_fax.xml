@@ -8,4 +8,5 @@
 
     <include layout="@layout/content_fax" />
 
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -41,7 +41,7 @@ public class LaunchActivity extends AppCompatActivity {
                     });
                     try {
                         // Sleep for 200 milliseconds.
-                        Thread.sleep(40);
+                        Thread.sleep(10);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
@@ -49,9 +49,15 @@ public class LaunchActivity extends AppCompatActivity {
                 if (progressStatus == 100){
                     Intent intent = new Intent(getApplicationContext(), MainNavigation.class);
                     startActivity(intent);
+                    finish();
                 }
             }
         }).start();
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
     }
 }
 

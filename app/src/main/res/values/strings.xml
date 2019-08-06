@@ -41,6 +41,16 @@
         <item>Office Items</item>
     </string-array>
 
+    <string-array name="expense_types">
+        <item>Rent</item>
+        <item>Repair</item>
+        <item>Legal</item>
+        <item>Transport</item>
+        <item>Tax</item>
+        <item>Ads</item>
+        <item>Other</item>
+    </string-array>
+
     <string name="PAtxt2">Product Name</string>
     <string name="PAtxt3">Product Code</string>
     <string name="PAtxt4">Cost Price</string>
@@ -48,9 +58,6 @@
     <string name="PAtxt6">Quantity</string>
     <string name="PAbtn1">Add Products</string>
     <string name="set_date">Set Date</string>
-
-    <string name="title_activity_fax">Fax</string>
-    <string name="title_activity_calls">Calls</string>
 
     <string name="SAtxt1">Product Code</string>
     <string name="SAtxt2">Product Name</string>
@@ -60,14 +67,5 @@
     <string name="SAtxt6">Select Date</string>
     <string name="SAbtn1">Add Sales</string>
 
-    <string name="btnFax">Fax</string>
-    <string name="btnCalls">Call</string>
-    <string name="btnFCHistory">History</string>
 
-    <string name="btnAddFax">Add</string>
-    <string name="btnCancelFax">Cancel</string>
-
-    <string name="btnAddCall">Add</string>
-    <string name="btnCancelCall">Cancel</string>
-    <string name="title_activity_fchistory">FCHistory</string>
 </resources>

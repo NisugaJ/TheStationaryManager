@@ -17,8 +17,7 @@ public class MainNavigation extends AppCompatActivity {
     private FragmentManager fm ;
     private FragmentTransaction ft;
 
-    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
-            = new BottomNavigationView.OnNavigationItemSelectedListener() {
+    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -33,10 +32,22 @@ public class MainNavigation extends AppCompatActivity {
                     break;
                 case R.id.navigation_stationery:
                     title = getString(R.string.title_stationery);
+                    Frg = new Stationery();
                     break;
                 case R.id.navigation_printing:
-                    title = getString(R.string.title_printing);
-                    break;
+                    setTitle(R.string.title_printing);
+//                    Intent intent = new Intent(getApplicationContext(), ServiceUpdate1.class);
+//                    startActivity(intent);
+//                    frag = findViewById(R.id.fragment2);
+//                    frag.removeAllViews();
+//                    ServiceHomeFrag serviceFrg = new ServiceHomeFrag();
+//                    fm = getSupportFragmentManager();
+//                    ft = fm.beginTransaction();
+//                    ft.add(R.id.fragment2, serviceFrg);
+//                    ft.commit();
+//                    Toast.makeText(getApplicationContext(), "printing Clicked", Toast.LENGTH_SHORT).show();
+//                    return true;
+                    Frg = new ServiceHomeFrag();
                 case R.id.navigation_faxAndCalls:
                     title = getString(R.string.title_faxAndCalls);
                     Frg = new faxCalls();
@@ -65,6 +76,18 @@ public class MainNavigation extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         BottomNavigationView navView = findViewById(R.id.nav_view);
         navView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+
+        setTitle(R.string.title_home);
+        Home homeFrg = new Home();
+        fm = getSupportFragmentManager();
+        ft = fm.beginTransaction();
+        ft.replace(R.id.fragment2, homeFrg);
+        ft.commit();
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
 
         setTitle(R.string.title_home);
         Home homeFrg = new Home();

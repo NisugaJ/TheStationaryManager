@@ -26,7 +26,7 @@ public class AddSales extends AppCompatActivity implements AdapterView.OnItemSel
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_sales);
-//        getSupportActionBar().setTitle("Add Sales");
+        getSupportActionBar().setTitle("Add Sales");
 
 
         Spinner spinner = findViewById(R.id.spinner1);
