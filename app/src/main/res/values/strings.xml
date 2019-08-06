@@ -81,48 +81,6 @@
     <string name="btnNav1">Category</string>
     <string name="btnNav2">Sales</string>
 
-    <string name="start_date">Start Date</string>
-    <string name="end_date">End Date</string>
-    <string name="tilde">~</string>
-
-    <string name="uptext1">Service Name</string>
-    <string name="uptext2">Service Code</string>
-    <string name="uptext3">Cost Price</string>
-    <string name="uptext4">Selling Price</string>
-    <string name="uptext5">Quantity</string>
-    <string name="uptext6">Service Name</string>
-    <string name="upbtn1">Update Service</string>
-    <string-array name="spinnerup1">
-        <item>Binding</item>
-        <item>Laminating</item>
-        <item>Photo Copy</item>
-        <item>PrintOuts</item>
-    </string-array>
-
-    <string name="textadd1">Service Name</string>
-    <string name="textadd2">Service Code</string>
-    <string name="textadd3">Cost Price</string>
-    <string name="textadd4">Selling Price</string>
-    <string name="textadd5">Quantity</string>
-    <string name="textadd6">Service Name</string>
-    <string name="btnadd1">Add Service</string>
-    <string-array name="comboboxadd1">
-        <item>Binding</item>
-        <item>Laminating</item>
-        <item>Photo Copy</item>
-        <item>PrintOuts</item>
-    </string-array>
-
-
-    <string name="textsale2">Service Name</string>
-    <string name="textsale3">Category</string>
-    <string name="textsale4">Price</string>
-    <string name="textsale5">Quantity</string>
-    <string name="button3">Date</string>
-    <string name="btnsale1">Add Sale</string>
-    <string name="net_expenes">Net Expenes</string>
-    <string name="net_income">Net Income</string>
-    <string name="net_profit">Net Profit</string>
 
 
 </resources>
