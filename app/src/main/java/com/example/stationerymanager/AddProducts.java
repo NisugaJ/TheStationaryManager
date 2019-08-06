@@ -14,7 +14,7 @@ public class AddProducts extends AppCompatActivity implements AdapterView.OnItem
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_products);
-
+        getSupportActionBar().setTitle("Add Products");
 
         Spinner spinner = findViewById(R.id.spinner1);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.combo_box1, android.R.layout.simple_spinner_item);
