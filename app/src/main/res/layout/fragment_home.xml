@@ -10,7 +10,7 @@
     tools:context=".Home">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView3"
+        android:id="@+id/faxAndCallsCard"
         android:layout_width="390dp"
         android:layout_height="80dp"
         android:layout_marginStart="8dp"
@@ -20,11 +20,11 @@
         android:layout_marginRight="8dp"
         android:elevation="10dp"
         app:cardBackgroundColor="@color/colorAccent"
-        app:layout_constraintBottom_toTopOf="@+id/cardView4"
+        app:layout_constraintBottom_toTopOf="@+id/expensesCard"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView2">
+        app:layout_constraintTop_toBottomOf="@+id/printingCard">
 
         <ImageView
             android:id="@+id/imageView8521"
@@ -49,7 +49,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:layout_marginTop="20dp"
-            android:layout_marginRight="20dp"
+            android:layout_marginRight="30dp"
             android:gravity="center_vertical"
             android:text="Profit"
             android:textSize="18sp" />
@@ -69,7 +69,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView2"
+        android:id="@+id/printingCard"
         android:layout_width="390dp"
         android:layout_height="80dp"
         android:layout_marginStart="8dp"
@@ -79,11 +79,11 @@
         android:layout_marginRight="8dp"
         android:elevation="10dp"
         app:cardBackgroundColor="@color/colorAccent"
-        app:layout_constraintBottom_toTopOf="@+id/cardView3"
+        app:layout_constraintBottom_toTopOf="@+id/faxAndCallsCard"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView">
+        app:layout_constraintTop_toBottomOf="@+id/stationeryCard">
 
         <ImageView
             android:id="@+id/imageView1"
@@ -108,7 +108,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:layout_marginTop="20dp"
-            android:layout_marginRight="20dp"
+            android:layout_marginRight="30dp"
             android:gravity="center_vertical"
             android:text="Profit"
             android:textSize="18sp" />
@@ -128,7 +128,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView4"
+        android:id="@+id/expensesCard"
         android:layout_width="390dp"
         android:layout_height="80dp"
         android:layout_marginStart="8dp"
@@ -142,7 +142,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView3">
+        app:layout_constraintTop_toBottomOf="@+id/faxAndCallsCard">
 
         <ImageView
             android:id="@+id/imageView"
@@ -151,7 +151,7 @@
             android:layout_marginVertical="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:src="@drawable/ic_stationery" />
+            android:src="@drawable/ic_expenses" />
 
         <TextView
             android:id="@+id/textView28"
@@ -179,11 +179,11 @@
         android:id="@+id/netProfitView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
         android:layout_marginTop="20dp"
         android:text="@string/net_profit"
         android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/netProfitAmountView"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -193,13 +193,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="172dp"
         android:layout_marginLeft="172dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         android:text="Rs. 50000.00"
         android:textSize="18sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/netProfitView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintEnd_toEndOf="@+id/netIncomeAmountView"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/netProfitView" />
 
     <TextView
@@ -208,7 +206,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:text="@string/net_income"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -226,7 +224,7 @@
         android:textSize="18sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/netIncomeView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.918"
+        app:layout_constraintHorizontal_bias="0.912"
         app:layout_constraintStart_toEndOf="@+id/netIncomeView" />
 
     <TextView
@@ -235,7 +233,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="16dp"
         android:text="@string/net_expenes"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -257,7 +255,7 @@
         app:layout_constraintStart_toEndOf="@+id/netExpensesView" />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView"
+        android:id="@+id/stationeryCard"
         android:layout_width="390dp"
         android:layout_height="80dp"
         android:layout_marginStart="8dp"
@@ -267,7 +265,7 @@
         android:layout_marginRight="8dp"
         android:elevation="10dp"
         app:cardBackgroundColor="@color/colorAccent"
-        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintBottom_toTopOf="@+id/printingCard"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -296,7 +294,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:layout_marginTop="20dp"
-            android:layout_marginRight="20dp"
+            android:layout_marginRight="30dp"
             android:gravity="center_vertical"
             android:text="Profit"
             android:textSize="18sp" />
