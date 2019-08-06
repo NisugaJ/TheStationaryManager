@@ -43,7 +43,8 @@
         app:layout_constraintHorizontal_bias="0.964"
         app:layout_constraintStart_toEndOf="@+id/addCalls"
         app:layout_constraintTop_toBottomOf="@+id/editText8"
-        app:layout_constraintVertical_bias="0.321" />
+        app:layout_constraintVertical_bias="0.321"
+        android:background="@android:color/holo_orange_light"/>
 
     <Button
         android:id="@+id/addCalls"
@@ -62,7 +63,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView15"
-        app:layout_constraintVertical_bias="0.331" />
+        app:layout_constraintVertical_bias="0.331"
+        android:background="@android:color/holo_orange_light"/>
 
     <TextView
         android:id="@+id/callTotal"

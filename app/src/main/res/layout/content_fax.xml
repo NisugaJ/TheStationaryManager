@@ -178,7 +178,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView19"
-        app:layout_constraintVertical_bias="0.283" />
+        app:layout_constraintVertical_bias="0.283"
+        android:background="@android:color/holo_orange_light"/>
 
     <Button
         android:id="@+id/cancelFax"
@@ -197,7 +198,8 @@
         app:layout_constraintHorizontal_bias="0.964"
         app:layout_constraintStart_toEndOf="@+id/addFax"
         app:layout_constraintTop_toBottomOf="@+id/editText3"
-        app:layout_constraintVertical_bias="0.311" />
+        app:layout_constraintVertical_bias="0.311"
+        android:background="@android:color/holo_orange_light"/>
 
     <TextView
         android:id="@+id/faxTotal"
