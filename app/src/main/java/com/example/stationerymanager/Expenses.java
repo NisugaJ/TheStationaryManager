@@ -7,6 +7,7 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.view.menu.ActionMenuItem;
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -24,7 +25,7 @@ public class Expenses extends Fragment {
     View view;
     FloatingActionButton addExpense;
     GridView grid;
-    String[] expenseTypes = {
+    static String[] expenseTypes = {
             "Rent",
             "Repair",
             "Legal",
@@ -77,6 +78,8 @@ public class Expenses extends Fragment {
                 @Override
                 public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                     Toast.makeText(getContext(), expenseTypes[i]+ " Clicked", Toast.LENGTH_SHORT).show();
+                    Intent intentToExpensesList = new Intent(getContext(), ExpensesList.class);
+                    startActivity(intentToExpensesList);
                 }
             });
 
@@ -90,5 +93,10 @@ public class Expenses extends Fragment {
         return view;
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
 
+
+    }
 }

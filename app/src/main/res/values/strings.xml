@@ -41,6 +41,16 @@
         <item>Office Items</item>
     </string-array>
 
+    <string-array name="expense_types">
+        <item >Rent</item>
+        <item >Repair</item>
+        <item >Legal</item>
+        <item >Transport</item>
+        <item >Tax</item>
+        <item >Ads</item>
+        <item >Other</item>
+    </string-array>
+
     <string name="PAtxt2">Product Name</string>
     <string name="PAtxt3">Product Code</string>
     <string name="PAtxt4">Cost Price</string>
@@ -71,73 +81,6 @@
     <string name="btnNav1">Category</string>
     <string name="btnNav2">Sales</string>
 
-    <string name="Bt1">Book Type 1</string>
-    <string name="Bt2">Book Type 2</string>
-    <string name="Bt3">Book Type 3</string>
-    <string name="Bc1">Code 1</string>
-    <string name="Bc2">Code 2</string>
-    <string name="Bc3">Code 3</string>
-    <string name="Cp1">Cost Price - Rs.150</string>
-    <string name="Cp2">Cost Price - Rs.130</string>
-    <string name="Cp3">Cost Price - Rs.100</string>
-    <string name="Sp1">Selling Price - Rs.180</string>
-    <string name="Sp2">Selling Price - Rs.150</string>
-    <string name="Sp3">Selling Price - Rs.130</string>
-    <string name="qty1">Qty - 20</string>
-    <string name="qty2">Qty - 22</string>
-    <string name="qty3">Qty - 15</string>
 
-    <string name="Pt1">Pen Type 1</string>
-    <string name="Pt2">Pen Type 2</string>
-    <string name="Pt3">Pen Type 3</string>
-    <string name="Pc1">Code 1</string>
-    <string name="Pc2">Code 2</string>
-    <string name="Pc3">Code 3</string>
-    <string name="PCp1">Cost Price - Rs.15</string>
-    <string name="PCp2">Cost Price - Rs.10</string>
-    <string name="PCp3">Cost Price - Rs.16</string>
-    <string name="PSp1">Selling Price - Rs.18</string>
-    <string name="PSp2">Selling Price - Rs.15</string>
-    <string name="PSp3">Selling Price - Rs.19</string>
-    <string name="Pqty1">Qty - 80</string>
-    <string name="Pqty2">Qty - 52</string>
-    <string name="Pqty3">Qty - 75</string>
-
-    <string name="Ot1">Item 1</string>
-    <string name="Ot2">Item 2</string>
-    <string name="Ot3">Item 3</string>
-    <string name="Oc1">Code 1</string>
-    <string name="Oc2">Code 2</string>
-    <string name="Oc3">Code 3</string>
-    <string name="OCp1">Cost Price - Rs.150</string>
-    <string name="OCp2">Cost Price - Rs.90</string>
-    <string name="OCp3">Cost Price - Rs.60</string>
-    <string name="OSp1">Selling Price - Rs.180</string>
-    <string name="OSp2">Selling Price - Rs.100</string>
-    <string name="OSp3">Selling Price - Rs.75</string>
-    <string name="Oqty1">Qty - 30</string>
-    <string name="Oqty2">Qty - 22</string>
-    <string name="Oqty3">Qty - 35</string>
-
-    <string name="St1">Item 1</string>
-    <string name="St2">Item 2</string>
-    <string name="St3">Item 3</string>
-    <string name="Sc1">Code 1</string>
-    <string name="Sc2">Code 2</string>
-    <string name="Sc3">Code 3</string>
-    <string name="SCp1">Cost Price - Rs.150</string>
-    <string name="SCp2">Cost Price - Rs.90</string>
-    <string name="SCp3">Cost Price - Rs.60</string>
-    <string name="SSp1">Selling Price - Rs.180</string>
-    <string name="SSp2">Selling Price - Rs.100</string>
-    <string name="SSp3">Selling Price - Rs.75</string>
-    <string name="Sqty1">Qty - 30</string>
-    <string name="Sqty2">Qty - 22</string>
-    <string name="Sqty3">Qty - 35</string>
-
-    <string name="SL1">Search by Date</string>
-    <string name="SL2">Search by Category</string>
-    <string name="SLt1">SALE 1</string>
-    <string name="SLt2">SALE 2</string>
 
 </resources>
