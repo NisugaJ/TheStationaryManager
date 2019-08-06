@@ -4,63 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LaminatingDisplay">
-
-
-    <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.177"
-        app:srcCompat="@drawable/delet1" />
-
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.177"
-        app:srcCompat="@drawable/delet1" />
+    android:onClick="editBinding"
+    tools:context=".BindingDisplay">
 
     <View
         android:id="@+id/view5"
-        android:layout_width="407dp"
-        android:layout_height="125dp"
+        android:layout_width="420dp"
+        android:layout_height="142dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="8dp"
         android:background="@color/backColors"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.408" />
+        app:layout_constraintVertical_bias="0.402" />
 
     <TextView
         android:id="@+id/bind6"
-        android:layout_width="85dp"
-        android:layout_height="40dp"
+        android:layout_width="97dp"
+        android:layout_height="42dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
@@ -70,10 +34,10 @@
         android:text="Service Name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintHorizontal_bias="0.14"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.382" />
+        app:layout_constraintVertical_bias="0.363" />
 
     <TextView
         android:id="@+id/bind10"
@@ -88,24 +52,24 @@
         android:text="Quantity"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.596"
+        app:layout_constraintHorizontal_bias="0.69"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.468" />
 
     <View
         android:id="@+id/view1"
-        android:layout_width="424dp"
-        android:layout_height="114dp"
+        android:layout_width="418dp"
+        android:layout_height="120dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="8dp"
         android:background="@color/backColors"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintHorizontal_bias="0.056"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.101" />
+        app:layout_constraintVertical_bias="0.091" />
 
 
     <TextView
@@ -121,10 +85,9 @@
         android:text="Category"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.398"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.125" />
+        app:layout_constraintVertical_bias="0.124" />
 
     <TextView
         android:id="@+id/bind1"
@@ -139,10 +102,10 @@
         android:text="Service Name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintHorizontal_bias="0.12"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.127" />
+        app:layout_constraintVertical_bias="0.125" />
 
     <TextView
         android:id="@+id/bind4"
@@ -157,10 +120,10 @@
         android:text="Selling Price"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.174"
+        app:layout_constraintHorizontal_bias="0.293"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.217" />
+        app:layout_constraintVertical_bias="0.215" />
 
     <TextView
         android:id="@+id/bind9"
@@ -175,7 +138,7 @@
         android:text="Selling Price"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.174"
+        app:layout_constraintHorizontal_bias="0.293"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.468" />
@@ -193,10 +156,10 @@
         android:text="Cost Price"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.712"
+        app:layout_constraintHorizontal_bias="0.825"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.382" />
+        app:layout_constraintVertical_bias="0.363" />
 
     <TextView
         android:id="@+id/bind7"
@@ -211,10 +174,10 @@
         android:text="Category"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.406"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.382" />
+        app:layout_constraintVertical_bias="0.363" />
 
     <TextView
         android:id="@+id/bind5"
@@ -229,7 +192,7 @@
         android:text="Quantity"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.604"
+        app:layout_constraintHorizontal_bias="0.699"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.217" />
@@ -247,15 +210,15 @@
         android:text="Cost Price"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.753"
+        app:layout_constraintHorizontal_bias="0.884"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.122" />
+        app:layout_constraintVertical_bias="0.124" />
 
     <ImageButton
         android:id="@+id/imageButton2"
-        android:layout_width="56dp"
-        android:layout_height="72dp"
+        android:layout_width="38dp"
+        android:layout_height="64dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
@@ -272,14 +235,15 @@
 
     <ImageButton
         android:id="@+id/imageButton5"
-        android:layout_width="44dp"
-        android:layout_height="73dp"
+        android:layout_width="34dp"
+        android:layout_height="48dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
+        android:onClick="editBinding"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -288,17 +252,17 @@
         app:layout_constraintVertical_bias="0.175"
         app:srcCompat="@drawable/ic_delete" />
 
-    <ImageButton
+    <Button
         android:id="@+id/imageButton6"
-        android:layout_width="54dp"
-        android:layout_height="68dp"
+        android:layout_width="44dp"
+        android:layout_height="53dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:onClick="editLaminatings"
+        android:onClick="editBinding"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.155"
@@ -307,4 +271,7 @@
         app:layout_constraintVertical_bias="0.943"
         app:srcCompat="@drawable/edit_service" />
 
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+

@@ -6,17 +6,17 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class LaminatingDisplay extends AppCompatActivity {
+public class BindingDisplay extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_laminating_display);
+        setContentView(R.layout.activity_binding_display);
         setTitle("Service List");
     }
 
-    public void editLaminatings(View view){
-        Intent intent =  new Intent(getApplicationContext(),ServiceUpdate1.class);
+    public void editBinding(View view){
+        Intent intent =  new Intent(BindingDisplay.this,ServiceUpdate1.class);
         startActivity(intent);
     }
 }

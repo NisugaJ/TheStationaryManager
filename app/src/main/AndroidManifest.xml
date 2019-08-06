@@ -9,8 +9,14 @@
         android:roundIcon="@drawable/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-<<<<<<< HEAD
-        <activity android:name=".LaminatingDisplay"></activity>
+        <activity android:name=".PrintOutDisplay"></activity>
+        <activity android:name=".PhotoCopyDisplay" />
+        <activity android:name=".ServiceAddSales" />
+        <activity android:name=".BindingDisplay" />
+        <activity android:name=".LaminatingDisplay" />
+        <activity android:name=".AddServiceSales"/>
+        <activity android:name=".ServiceUpdate1"/>
+
         <activity
             android:name=".TimePickActivity"
             android:screenOrientation="portrait" />
@@ -29,13 +35,12 @@
         <activity
             android:name=".MainNavigation"
             android:screenOrientation="portrait" />
-        <activity android:name=".AddService1" />
+        <activity
+            android:name=".AddService1"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".AddExpenses"
             android:screenOrientation="portrait" />
-=======
-
->>>>>>> a49432ce555fe635438f4d1fbe0061c62f96a531
         <activity
             android:name=".LaunchActivity"
             android:label="@string/app_name">

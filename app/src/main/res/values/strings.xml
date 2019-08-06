@@ -67,8 +67,91 @@
     <string name="SAtxt6">Select Date</string>
     <string name="SAbtn1">Add Sales</string>
 
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="tilde">~</string>
+
+    <string name="UPtxt2">Product Name</string>
+    <string name="UPtxt3">Product Code</string>
+    <string name="UPtxt4">Cost Price</string>
+    <string name="UPtxt5">Selling Price</string>
+    <string name="UPtxt6">Quantity</string>
+    <string name="UPbtn1">Update Products</string>
+
+    <string name="t1">BOOKS</string>
+    <string name="t2">PENS</string>
+    <string name="t3">SCHOOL ITEMS</string>
+    <string name="t4">OFFICE ITEMS</string>
+    <string name="btnNav1">Category</string>
+    <string name="btnNav2">Sales</string>
+
+    <string name="uptext1">Service Name</string>
+    <string name="uptext2">Service Code</string>
+    <string name="uptext3">Cost Price</string>
+    <string name="uptext4">Selling Price</string>
+    <string name="uptext5">Quantity</string>
+    <string name="uptext6">Service Name</string>
+    <string name="upbtn1">Update Service</string>
+    <string-array name="spinnerup1">
+        <item>Binding</item>
+        <item>Laminating</item>
+        <item>Photo Copy</item>
+        <item>PrintOuts</item>
+    </string-array>
+
+    <string name="textadd1">Service Name</string>
+    <string name="textadd2">Service Code</string>
+    <string name="textadd3">Cost Price</string>
+    <string name="textadd4">Selling Price</string>
+    <string name="textadd5">Quantity</string>
+    <string name="textadd6">Service Name</string>
+    <string name="btnadd1">Add Service</string>
+    <string-array name="comboboxadd1">
+        <item>Binding</item>
+        <item>Laminating</item>
+        <item>Photo Copy</item>
+        <item>PrintOuts</item>
+    </string-array>
 
 
-    <string name ="btnCat">Category</string>
-    <string name ="btnSale">Sales</string>
+    <string name="textsale2">Service Name</string>
+    <string name="textsale3">Category</string>
+    <string name="textsale4">Price</string>
+    <string name="textsale5">Quantity</string>
+    <string name="button3">Date</string>
+    <string name="btnsale1">Add Sale</string>
+
+
+    <string name="upperbtnCat">Category</string>
+    <string name="upperbtnSale">Sales</string>
+
+    <string name="dis1">Service Name</string>
+    <string name="dis2">Date</string>
+    <string name="dis3">Category</string>
+    <string name="dis4">Price</string>
+    <string name="dis5">Quantity</string>
+    <string name="dis6">Profit</string>
+    <string name="dis7">Service</string>
+    <string name="dis8">Date</string>
+    <string name="dis9">Category</string>
+    <string name="dis10">Price</string>
+    <string name="dis11">Quantity</string>
+    <string name="dis12">Profit</string>
+
+    <string name="btnmenu">Category</string>
+    <string name="btnmenu1">Sale</string>
+
+    <string name="bind1">Service Name</string>
+    <string name="bind2">Category</string>
+    <string name="bind3">Cost Price</string>
+    <string name="bind4">Selling Price</string>
+    <string name="bind5">Quantity</string>
+    <string name="bind6">Service Name</string>
+    <string name="bind7">Category</string>
+    <string name="bind8">Cost Price</string>
+    <string name="bind9">Selling Price</string>
+    <string name="bind10">Quantity</string>
+
+
+
 </resources>
