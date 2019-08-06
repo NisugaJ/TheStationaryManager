@@ -22,10 +22,18 @@ public class faxCalls extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v = inflater.inflate(R.layout.fragment_fax_calls, container, false);
-        call = v.findViewById(R.id.addCalls);
-        fax = v.findViewById(R.id.addFax);
-        history = v.findViewById(R.id.FCHistory);
+        view = inflater.inflate(R.layout.fragment_fax_calls, container, false);
+        call = view.findViewById(R.id.call);
+        fax = view.findViewById(R.id.fax);
+        history = view.findViewById(R.id.FCHistory);
+
+
+        return view;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
 
         call.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -41,10 +49,11 @@ public class faxCalls extends Fragment {
         });
         history.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(view.getContext(),faxCalls.class);
+                Intent intent = new Intent(view.getContext(),FCHistory.class);
                 startActivity(intent);
             }
         });
-        return v;
     }
+
+
 }

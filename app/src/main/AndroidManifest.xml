@@ -12,12 +12,13 @@
         <activity
             android:name=".FCHistory"
             android:label="@string/title_activity_fchistory"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Calls" />
         <activity android:name=".Fax" />
         <activity android:name=".AddSales" />
         <activity android:name=".MainNavigation" />
         <activity android:name=".AddExpenses" />
+        <activity android:name=".fchistory" />
         <activity
             android:name=".LaunchActivity"
             android:label="@string/app_name">

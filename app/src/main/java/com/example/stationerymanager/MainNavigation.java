@@ -39,6 +39,7 @@ public class MainNavigation extends AppCompatActivity {
                     break;
                 case R.id.navigation_faxAndCalls:
                     title = getString(R.string.title_faxAndCalls);
+                    Frg = new faxCalls();
                     break;
                 case R.id.navigation_expenses:
                     title = getString(R.string.title_expenses);

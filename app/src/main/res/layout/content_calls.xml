@@ -4,25 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".Calls"
     tools:showIn="@layout/activity_calls">
 
     <ImageView
         android:id="@+id/imageView9"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="292dp"
-        android:layout_marginLeft="292dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginRight="84dp"
         android:contentDescription="@string/update_the_selected_expense_type"
         app:layout_constraintBottom_toBottomOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="@+id/view4"
-        app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/editText6"
+        app:layout_constraintHorizontal_bias="0.0"
 
+        app:layout_constraintStart_toStartOf="@+id/editText6"
+        app:layout_constraintTop_toBottomOf="@+id/editText6"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/ic_update" />
 
@@ -32,19 +34,15 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="68dp"
         android:layout_marginRight="68dp"
-        android:layout_marginBottom="8dp"
+        android:background="@color/colorPrimary"
         android:text="@string/btnCancelCall"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/addCalls"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.964"
-        app:layout_constraintStart_toEndOf="@+id/addCalls"
-        app:layout_constraintTop_toBottomOf="@+id/editText8"
-        app:layout_constraintVertical_bias="0.321"
-        android:background="@android:color/holo_orange_light"/>
+        app:layout_constraintStart_toEndOf="@id/addCalls" />
 
     <Button
         android:id="@+id/addCalls"
@@ -56,6 +54,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
+        android:background="@color/colorPrimary"
         android:text="@string/btnAddCall"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -63,8 +62,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView15"
-        app:layout_constraintVertical_bias="0.331"
-        android:background="@android:color/holo_orange_light"/>
+        app:layout_constraintVertical_bias="0.331" />
 
     <TextView
         android:id="@+id/callTotal"
@@ -77,7 +75,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:text="Total :"
-        android:textSize="24sp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -103,8 +101,8 @@
 
     <TextView
         android:id="@+id/textView11"
-        android:layout_width="140dp"
-        android:layout_height="39dp"
+        android:layout_width="115dp"
+        android:layout_height="36dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
@@ -112,7 +110,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:text="How much :"
-        android:textSize="24sp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.041"
@@ -131,7 +129,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:text="Name :"
-        android:textSize="24sp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.047"
@@ -150,7 +148,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:text="No of mins :"
-        android:textSize="24sp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.032"
@@ -169,7 +167,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:text="Number :"
-        android:textSize="24sp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.039"
@@ -189,7 +187,7 @@
         android:inputType="textPersonName"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView11"
         app:layout_constraintEnd_toEndOf="@+id/view4"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textView11" />
 
     <EditText
