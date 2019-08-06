@@ -96,7 +96,5 @@ public class Expenses extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-
-
     }
 }
