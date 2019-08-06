@@ -13,17 +13,20 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.GridView;
 import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+import static com.example.stationerymanager.R.id.btnmenu1;
 import static com.example.stationerymanager.R.id.floatingActionButton_addExpense;
 import static com.example.stationerymanager.R.id.gridExpenseTypes;
 
 
 public class ServiceHomeFrag extends Fragment {    View view;
     FloatingActionButton addExpense;
+    Button salesBtn;
     GridView grid;
     String[] expenseTypes = {
             "Binding",
@@ -58,11 +61,15 @@ public class ServiceHomeFrag extends Fragment {    View view;
         view = inflater.inflate(R.layout.fragment_service_home, container, false);
         grid = view.findViewById(gridExpenseTypes);
         addExpense = view.findViewById(floatingActionButton_addExpense);
+        salesBtn  =  view.findViewById(btnmenu1);
         grid.setAdapter(adapter);
+
         grid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Toast.makeText(getContext(), expenseTypes[i]+ " Clicked", Toast.LENGTH_SHORT).show();
+                Intent intentToServicesList = new Intent(getContext(), BindingDisplay.class);
+                startActivity(intentToServicesList);
             }
         });
 
@@ -72,6 +79,14 @@ public class ServiceHomeFrag extends Fragment {    View view;
                 startActivity(intent);
             }
         });
+
+        salesBtn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(view.getContext(), ServiceAddSales.class);
+                startActivity(intent);
+            }
+        });
+
         // Inflate the layout for this fragment
         return view;
     }
