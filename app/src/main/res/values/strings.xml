@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">StationeryManager</string>
     <string name="title_home">Home</string>
-    <string name="title_printing">Printing</string>
+    <string name="title_printing">Services</string>
     <string name="title_stationery">Stationery</string>
     <string name="title_faxAndCalls">Fax And Calls</string>
     <string name="title_expenses">Expenses</string>
@@ -229,5 +229,17 @@
     <string name="textadd6">Service Name</string>
     <string name="btnadd1">Add Service</string>
 
+    <string name="btnFax">Fax</string>
+    <string name="btnCalls">Call</string>
+    <string name="btnFCHistory">History</string>
+
+    <string name="btnAddFax">Add</string>
+    <string name="btnCancelFax">Cancel</string>
+
+    <string name="btnAddCall">Add</string>
+    <string name="btnCancelCall">Cancel</string>
+    <string name="title_activity_fchistory">FCHistory</string>
+    <string name="logo_launch">Logo_launch</string>
+    <string name="the_stationery_manager">The Stationery Manager</string>
 
 </resources>

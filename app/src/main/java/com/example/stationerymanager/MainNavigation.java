@@ -3,6 +3,8 @@ package com.example.stationerymanager;
 import android.content.Intent;
 import android.os.Bundle;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import androidx.annotation.MenuRes;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -10,17 +12,20 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Toast;
 
 public class MainNavigation extends AppCompatActivity {
     private FragmentManager fm ;
     private FragmentTransaction ft;
+    private MenuItem menuItem;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+            menuItem = item;
             Fragment Frg = null;
             ConstraintLayout frag = findViewById(R.id.fragment2);
             frag.removeAllViews();
@@ -35,7 +40,7 @@ public class MainNavigation extends AppCompatActivity {
                     Frg = new Stationery();
                     break;
                 case R.id.navigation_printing:
-                    setTitle(R.string.title_printing);
+                    title = getString(R.string.title_printing);
 //                    Intent intent = new Intent(getApplicationContext(), ServiceUpdate1.class);
 //                    startActivity(intent);
 //                    frag = findViewById(R.id.fragment2);
@@ -48,8 +53,10 @@ public class MainNavigation extends AppCompatActivity {
 //                    Toast.makeText(getApplicationContext(), "printing Clicked", Toast.LENGTH_SHORT).show();
 //                    return true;
                     Frg = new ServiceHomeFrag();
+                    break;
                 case R.id.navigation_faxAndCalls:
                     title = getString(R.string.title_faxAndCalls);
+                    Frg = new faxCalls();
                     break;
                 case R.id.navigation_expenses:
                     title = getString(R.string.title_expenses);
@@ -62,6 +69,7 @@ public class MainNavigation extends AppCompatActivity {
                 fm = getSupportFragmentManager();
                 ft = fm.beginTransaction();
                 ft.add(R.id.fragment2, Frg);
+                ft.addToBackStack(null);
                 ft.commit();
             }
             return true;

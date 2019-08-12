@@ -30,20 +30,20 @@ public class Home extends Fragment {
         return  view;
     }
 
-    @Override
-    public void onResume() {
-        super.onResume();
-
-        toStationery.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Stationery stationery = new Stationery();
-                FragmentManager fragmentManager = getFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.fragment2, stationery);
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
-            }
-        });
-    }
+//    @Override
+//    public void onResume() {
+//        super.onResume();
+//
+//        toStationery.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Stationery stationery = new Stationery();
+//                FragmentManager fragmentManager = getFragmentManager();
+//                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+//                fragmentTransaction.replace(R.id.fragment2, stationery);
+//                fragmentTransaction.addToBackStack(null);
+//                fragmentTransaction.commit();
+//            }
+//        });
+//    }
 }
