@@ -1,6 +1,7 @@
 "# TheStationeryManager" - Android App
 
 1. Stationery Management
+
 There are different types of stationery items in a stationery shop such as books, pens, school items and office items. This function can be used to manage stationery products as well as sales details of stationery items.
 The shop owner has to add details of all stationery products including their category; books, pens, school items and office items. If the details of a particular product change owner can update those details. If he wants to remove a product from the system, he can delete that particular product.
             Also the owner can insert all sales details of stationery products daily or weekly. From that he can calculate his daily income.      
