@@ -42,74 +42,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-    <TextView
-        android:id="@+id/tx6"
-        android:layout_width="194dp"
-        android:layout_height="164dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="49dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="28dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/frame1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.128" />
-
-    <TextView
-        android:id="@+id/tx1"
-        android:layout_width="203dp"
-        android:layout_height="171dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="49dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="28dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/frame1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.584" />
-
-    <TextView
-        android:id="@+id/tx7"
-        android:layout_width="195dp"
-        android:layout_height="174dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="49dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="28dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/frame1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.588" />
-
-    <TextView
-        android:id="@+id/tx"
-        android:layout_width="184dp"
-        android:layout_height="170dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="49dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="28dp"
-        android:layout_marginBottom="18dp"
-        android:background="@drawable/frame1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.052"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.13" />
-
     <GridView
         android:id="@+id/gridExpenseTypes"
         android:layout_width="397dp"
@@ -117,6 +49,8 @@
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:columnWidth="80dp"
         android:numColumns="2"
         android:stretchMode="columnWidth"

@@ -36,12 +36,13 @@ public class Stationery extends Fragment {
 
         vw = inflater.inflate(R.layout.fragment_stationery, container, false);
 
-        btnNav2 = (Button)vw.findViewById(R.id.btnNav2);
+        btnNav2 = vw.findViewById(R.id.btnNav2);
         btnNav2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 FragmentTransaction ft1 = getFragmentManager().beginTransaction();
                 ft1.replace(R.id.fragment2, new SalesList());
+                ft1.addToBackStack(null);
                 ft1.commit();
             }
         });
@@ -52,6 +53,7 @@ public class Stationery extends Fragment {
             public void onClick(View view) {
                 FragmentTransaction ft = getFragmentManager().beginTransaction();
                 ft.replace(R.id.fragment2, new BooksList());
+                ft.addToBackStack(null);
                 ft.commit();
             }
         });
@@ -62,6 +64,7 @@ public class Stationery extends Fragment {
             public void onClick(View view) {
                 FragmentTransaction ft2 = getFragmentManager().beginTransaction();
                 ft2.replace(R.id.fragment2, new PensList());
+                ft2.addToBackStack(null);
                 ft2.commit();
             }
         });
@@ -72,6 +75,7 @@ public class Stationery extends Fragment {
             public void onClick(View view) {
                 FragmentTransaction ft3 = getFragmentManager().beginTransaction();
                 ft3.replace(R.id.fragment2, new SchoolItemsList());
+                ft3.addToBackStack(null);
                 ft3.commit();
             }
         });
@@ -82,6 +86,7 @@ public class Stationery extends Fragment {
             public void onClick(View view) {
                 FragmentTransaction ft4 = getFragmentManager().beginTransaction();
                 ft4.replace(R.id.fragment2, new OfficeItemsList());
+                ft4.addToBackStack(null);
                 ft4.commit();
             }
         });
@@ -100,7 +105,4 @@ public class Stationery extends Fragment {
         return vw;
 
     }
-
-
-
 }
