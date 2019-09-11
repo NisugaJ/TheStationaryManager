@@ -41,7 +41,7 @@ public class LaunchActivity extends AppCompatActivity {
                     });
                     try {
                         // Sleep for 200 milliseconds.
-                        Thread.sleep(10);
+                        Thread.sleep(20);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
