@@ -10,6 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+
+        <activity android:name=".UpdateSalesActivity"></activity>
+        <activity android:name=".SalesListActivity" />
+
+        <activity android:name=".AddServiceSales"
+        android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".AddService1"
+            android:screenOrientation="portrait" />
+
         <activity
             android:name=".MainNavigation"
             android:screenOrientation="portrait" />
@@ -49,7 +60,6 @@
         <activity
             android:name=".LaminatingDisplay"
             android:screenOrientation="portrait" />
-        <activity
 
         <activity
             android:name=".FCHistory"
