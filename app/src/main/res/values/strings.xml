@@ -266,5 +266,17 @@
     <string name="textsale">Profit</string>
     <string name="button3">Date</string>
 
+//Conflict Resolved strings
+    <string name="SAbtn">Sales List</string>
+    <string name="SAbtn11">Update Sale</string>
+
+    <string name="txtDate">Date Here</string>
+    <string name="txtName">Name</string>
+    <string name="txtCode">Code</string>
+    <string name="txtPrice">Price</string>
+    <string name="txtQty">qty</string>
+    <string name="txtTot">Total</string>
+    <string name="txtSel">Total Price :</string>
+
 
 </resources>
