@@ -10,6 +10,7 @@
     <string name="set_time">set Time</string>
     <string name="type">Type</string>
     <string name="add_expense">Add Expense</string>
+    <string name="update_expense">Update Expense</string>
     <string name="repair">Repair</string>
     <string name="rent">Rent</string>
     <string name="legal">Legal</string>
@@ -30,6 +31,9 @@
     <string name="total_expenses">Total Expenses</string>
     <string name="rs_2500_00">Rs. 2500.00</string>
     <string name="grid_image">Grid Image</string>
+    <string name="labelTitle">Title</string>
+    <string name="delete_alert">Are you sure want to delete the selected Item ?</string>
+
 
     <!--Stationery Management-->
     <string name="PAtxt1">Select Category</string>
@@ -241,5 +245,6 @@
     <string name="title_activity_fchistory">FCHistory</string>
     <string name="logo_launch">Logo_launch</string>
     <string name="the_stationery_manager">The Stationery Manager</string>
+    <string name="update">Update</string>
 
 </resources>
