@@ -61,6 +61,7 @@
     <string name="PAtxt5">Selling Price</string>
     <string name="PAtxt6">Quantity</string>
     <string name="PAbtn1">Add Products</string>
+    <string name="PAbtn">Product list</string>
     <string name="set_date">Set Date</string>
 
     <string name="SAtxt1">Product Code</string>
@@ -70,6 +71,7 @@
     <string name="SAtxt5">Quantity</string>
     <string name="SAtxt6">Select Date</string>
     <string name="SAbtn1">Add Sales</string>
+
 
 
     <string name="UPtxt2">Product Name</string>

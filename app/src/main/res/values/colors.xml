@@ -6,5 +6,6 @@
     <color name="btnColorFont">#4f0706</color>
     <color name="backColors">#ffedd1</color>
     <color name="clrBack">#7A7268</color>
+    <color name="black">#000000	</color>
 
 </resources>
