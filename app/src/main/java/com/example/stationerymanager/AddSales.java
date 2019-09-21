@@ -36,7 +36,7 @@ public class AddSales extends AppCompatActivity implements AdapterView.OnItemSel
         spinner.setOnItemSelectedListener(this);
 
         tvDate = findViewById(R.id.tvDate);
-        etDate = findViewById(R.id.editText3);
+        etDate = findViewById(R.id.no_of_fax);
 
         Calendar calendar = Calendar.getInstance();
         final int year = calendar.get(Calendar.YEAR);
@@ -62,27 +62,11 @@ public class AddSales extends AppCompatActivity implements AdapterView.OnItemSel
             }
         } ;
 
-//        etDate.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                DatePickerDialog datePickerDialog = new DatePickerDialog(AddSales.this, new DatePickerDialog.OnDateSetListener() {
-//                    @Override
-//                    public void onDateSet(DatePicker view, int year, int month, int day) {
-//                        month = month+1;
-//                        String date = day+"/"+month+"/"+year;
-//                        etDate.setText(date);
-//                    }
-//                },year,month,day);
-//                datePickerDialog.show();
-//            }
-//        });
-
     }
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-//        String.text = parent.getItemAtPosition(position).toString();
-//        Toast.makeText(parent.getContext(), text, Toast.LENGTH_SHORT).show();
+
     }
 
     @Override
