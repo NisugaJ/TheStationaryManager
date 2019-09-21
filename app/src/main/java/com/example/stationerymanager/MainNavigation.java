@@ -52,7 +52,7 @@ public class MainNavigation extends AppCompatActivity {
 //                    ft.commit();
 //                    Toast.makeText(getApplicationContext(), "printing Clicked", Toast.LENGTH_SHORT).show();
 //                    return true;
-                    Frg = new ServiceHomeFrag();
+                    Frg = new Services();
                     break;
                 case R.id.navigation_faxAndCalls:
                     title = getString(R.string.title_faxAndCalls);
