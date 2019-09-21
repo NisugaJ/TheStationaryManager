@@ -45,19 +45,19 @@
 
     <View
         android:id="@+id/view1"
-        android:layout_width="382dp"
-        android:layout_height="413dp"
+        android:layout_width="378dp"
+        android:layout_height="427dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@color/backColors"
+        android:background="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.761"
+        app:layout_constraintHorizontal_bias="0.68"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.379" />
+        app:layout_constraintVertical_bias="0.364" />
 
     <TextView
         android:id="@+id/tx"
@@ -126,20 +126,20 @@
 
     <TextView
         android:id="@+id/tx2"
-        android:layout_width="136dp"
-        android:layout_height="158dp"
+        android:layout_width="138dp"
+        android:layout_height="160dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/frame1"
         app:layout_constraintBaseline_toBaselineOf="@+id/tx3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintHorizontal_bias="0.151"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageView12"
-        android:layout_width="90dp"
-        android:layout_height="90dp"
+        android:layout_width="93dp"
+        android:layout_height="88dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
@@ -149,25 +149,25 @@
         android:src="@drawable/ic_stationery"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.193"
+        app:layout_constraintHorizontal_bias="0.195"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView10"
-        app:layout_constraintVertical_bias="0.375" />
+        app:layout_constraintVertical_bias="0.336" />
 
     <TextView
         android:id="@+id/tx3"
-        android:layout_width="136dp"
-        android:layout_height="158dp"
+        android:layout_width="138dp"
+        android:layout_height="160dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/frame1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.884"
+        app:layout_constraintHorizontal_bias="0.891"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.716" />
+        app:layout_constraintVertical_bias="0.639" />
 
     <ImageView
         android:id="@+id/imageView13"
@@ -182,10 +182,10 @@
         android:src="@drawable/office"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.635"
+        app:layout_constraintHorizontal_bias="0.627"
         app:layout_constraintStart_toEndOf="@+id/imageView12"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.641" />
+        app:layout_constraintVertical_bias="0.595" />
 
     <TextView
         android:id="@+id/t1"
@@ -229,10 +229,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageView12"
-        app:layout_constraintHorizontal_bias="0.606"
+        app:layout_constraintHorizontal_bias="0.46"
         app:layout_constraintStart_toStartOf="@+id/imageView12"
         app:layout_constraintTop_toBottomOf="@+id/imageView12"
-        app:layout_constraintVertical_bias="0.081" />
+        app:layout_constraintVertical_bias="0.048" />
 
     <TextView
         android:id="@+id/t4"
@@ -244,7 +244,7 @@
         android:textStyle="bold"
         app:layout_constraintBaseline_toBaselineOf="@+id/t3"
         app:layout_constraintEnd_toEndOf="@+id/imageView13"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="@+id/imageView13" />
 
     <Button
