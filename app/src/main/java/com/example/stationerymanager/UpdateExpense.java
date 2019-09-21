@@ -1,7 +1,5 @@
 package com.example.stationerymanager;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -19,9 +17,12 @@ import android.widget.Spinner;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+
 import java.util.Calendar;
 
-public class AddExpenses extends AppCompatActivity implements View.OnClickListener {
+public class UpdateExpense extends AppCompatActivity implements View.OnClickListener {
 
     private EditText editText_Title;
     private EditText editText_Amount;
@@ -34,17 +35,20 @@ public class AddExpenses extends AppCompatActivity implements View.OnClickListen
     private DatePickerDialog.OnDateSetListener dateSetListener;
     private TimePicker timePicker;
     private Button btnAddExpense;
-    private Button btnClear;
 
     private String dateANDtime;
+    private ArrayAdapter<String> SpinnerAdapter;
+    private int currentId ;
 
     public  static SQLiteExpensesHelper sqLiteExpensesHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_expenses);
-        setTitle(R.string.add_expense);
+        setContentView(R.layout.activity_update_expenses);
+        setTitle(R.string.update_expense);
+
+        Intent updateIntent = getIntent();
 
 
         editText_Title = findViewById(R.id.titleInput);
@@ -55,17 +59,24 @@ public class AddExpenses extends AppCompatActivity implements View.OnClickListen
         expenseTypesSpinner = findViewById((R.id.spinner_ExpenseTypes));
         editText_Amount = findViewById(R.id.amountInput);
         editText_NoteDescription = findViewById(R.id.noteInput);
+        loadExpenseTypesToSpinner();
+
+
+        currentId = updateIntent.getIntExtra("id", -99999999);
+        editText_Title.setText( updateIntent.getStringExtra("title"));
+        expenseTypesSpinner.setSelection(SpinnerAdapter.getPosition(updateIntent.getStringExtra("type")));
+        editText_Amount.setText( updateIntent.getStringExtra("amount"));
+        editText_Date.setText( updateIntent.getStringExtra("date"));
+        editText_Time.setText( updateIntent.getStringExtra("time"));
+        editText_NoteDescription.setText( updateIntent.getStringExtra("note"));
 
         btnAddExpense = findViewById(R.id.btnUpdateExpense);
-        btnClear = findViewById(R.id.btnClearAll);
-        loadExpenseTypesToSpinner();
 
         imageCalender.setOnClickListener(this);
         editText_Date.setOnClickListener(this);
         imageTime.setOnClickListener(this);
         editText_Time.setOnClickListener(this);
         btnAddExpense.setOnClickListener(this);
-        btnClear.setOnClickListener(this);
         //connect to db
         sqLiteExpensesHelper = new SQLiteExpensesHelper( getApplicationContext(), "Stationery.db", null, 1);
 
@@ -88,12 +99,8 @@ public class AddExpenses extends AppCompatActivity implements View.OnClickListen
                 break;
             case R.id.btnUpdateExpense:
                 if(validateForm())
-                    executeAddExpense();
+                    executeUpdateExpense();
                 break;
-            case R.id.btnClearAll :
-                clearFields();
-                break;
-
         }
     }
 
@@ -108,7 +115,7 @@ public class AddExpenses extends AppCompatActivity implements View.OnClickListen
         final int month = calendar.get(Calendar.MONTH);
         final int day = calendar.get(Calendar.DAY_OF_MONTH);
 
-        DatePickerDialog datePickerDialog = new DatePickerDialog( AddExpenses.this,android.R.style.Theme_Holo_Dialog_NoActionBar_MinWidth,dateSetListener,year,month,day);
+        DatePickerDialog datePickerDialog = new DatePickerDialog( UpdateExpense.this,android.R.style.Theme_Holo_Dialog_NoActionBar_MinWidth,dateSetListener,year,month,day);
         datePickerDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         datePickerDialog.show();
 
@@ -162,16 +169,15 @@ public class AddExpenses extends AppCompatActivity implements View.OnClickListen
 
     //Loads data to ExpenseTypes spinner
     private void loadExpenseTypesToSpinner(){
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, Expenses.expenseTypes);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        expenseTypesSpinner.setAdapter(adapter);    }
+        SpinnerAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, Expenses.expenseTypes);
+        SpinnerAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        expenseTypesSpinner.setAdapter(SpinnerAdapter);    }
 
     //Validates all the input fields
     private boolean validateForm(){
         dateANDtime = editText_Date.getText().toString().trim() + " "+ editText_Time.getText().toString().trim();
         Log.i("DateTime", dateANDtime);
         if (editText_Title.getText().toString().trim().length() == 0){
-            editText_Title.setError("Please enter a Title");
             Toast.makeText(getApplicationContext(),"Please enter a Title", Toast.LENGTH_SHORT).show();
             return false;
         }
@@ -191,10 +197,10 @@ public class AddExpenses extends AppCompatActivity implements View.OnClickListen
     }
 
     //executes insertFunction of sqLiteExpensesHelper
-    private void executeAddExpense(){
+    private void executeUpdateExpense(){
         try {
 
-            sqLiteExpensesHelper.insertExpense(
+            sqLiteExpensesHelper.updateExpense(currentId,
                     editText_Title.getText().toString().trim(),
                     expenseTypesSpinner.getSelectedItem().toString().trim(),
                     editText_Amount.getText().toString().trim(),
@@ -202,8 +208,11 @@ public class AddExpenses extends AppCompatActivity implements View.OnClickListen
                     editText_NoteDescription.getText().toString().trim()
             );
 
-            Toast.makeText(getApplicationContext(),"Added Successfully", Toast.LENGTH_SHORT).show();
-
+            Toast.makeText(getApplicationContext(),"Updated Successfully", Toast.LENGTH_SHORT).show();
+//            Intent returnIntent = new Intent(this, ExpensesList.class);
+////            returnIntent.putExtra("expenseType",expenseTypesSpinner.getSelectedItem().toString().trim());
+////            startActivity(returnIntent);
+            finish();
         }catch (Exception e){
             Log.e("CRUD error", e.toString());
             e.printStackTrace();
@@ -211,15 +220,6 @@ public class AddExpenses extends AppCompatActivity implements View.OnClickListen
 
     }
 
-    //clears all input fields
-    private void clearFields(){
-        editText_Title.getText().clear();
-        editText_Date.getText().clear();
-        editText_Time.getText().clear();
-        expenseTypesSpinner.setSelection(0);
-        editText_Amount.getText().clear();
-        editText_NoteDescription.getText().clear();
-        Toast.makeText(getApplicationContext(),"Cleared All fields", Toast.LENGTH_SHORT).show();
 
-    }
+
 }

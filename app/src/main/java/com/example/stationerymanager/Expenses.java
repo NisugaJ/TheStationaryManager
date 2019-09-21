@@ -2,6 +2,7 @@ package com.example.stationerymanager;
 
 import android.content.Context;
 import android.content.Intent;
+import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Build;
 import android.os.Bundle;
 
@@ -59,6 +60,8 @@ public class Expenses extends Fragment {
 
     };
 
+    public  static SQLiteExpensesHelper sqLiteExpensesHelper;
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -73,12 +76,27 @@ public class Expenses extends Fragment {
         view = inflater.inflate(R.layout.fragment_expenses, container, false);
         grid = view.findViewById(gridExpenseTypes);
         addExpense = view.findViewById(floatingActionButton_addExpense);
+
+        //db connection creation
+        sqLiteExpensesHelper = new SQLiteExpensesHelper( context, "Stationery.db", null, 1);
+
+        //creating table if not created
+        sqLiteExpensesHelper.creatExpensesTable("CREATE TABLE  IF NOT EXISTS expenses (\n" +
+                                                            "\texpenseID integer PRIMARY KEY AUTOINCREMENT,\n" +
+                                                            "  \ttitle TEXT,\n" +
+                                                            "  \ttype TEXT,\n" +
+                                                            "  \tamount REAL,\n" +
+                                                            "  \tdateANDtime TEXT,\n" +
+                                                            "  \tnote TEXT\n" +
+                                                            ")");
+
         grid.setAdapter(adapter);
         grid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                     Toast.makeText(getContext(), expenseTypes[i]+ " Clicked", Toast.LENGTH_SHORT).show();
                     Intent intentToExpensesList = new Intent(getContext(), ExpensesList.class);
+                    intentToExpensesList.putExtra("expenseType", expenseTypes[i]);
                     startActivity(intentToExpensesList);
                 }
             });
