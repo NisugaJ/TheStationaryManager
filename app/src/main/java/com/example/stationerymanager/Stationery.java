@@ -40,10 +40,9 @@ public class Stationery extends Fragment {
         btnNav2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                FragmentTransaction ft1 = getFragmentManager().beginTransaction();
-                ft1.replace(R.id.fragment2, new SalesList());
-                ft1.addToBackStack(null);
-                ft1.commit();
+
+                Intent intent = new Intent(vw.getContext(), AddSales.class);
+                startActivity(intent);
             }
         });
 
