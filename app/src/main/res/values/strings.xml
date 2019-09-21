@@ -169,12 +169,21 @@
     <string name="uptext6">Service Name</string>
     <string name="upbtn1">Update Service</string>
 
-    <string-array name="spinnerup1">
-        <item>Binding</item>
-        <item>Laminating</item>
-        <item>Photo Copy</item>
-        <item>PrintOuts</item>
-    </string-array>
+
+    <string name="textUp1">Service Type</string>
+    <string name="textUp2">Description</string>
+    <string name="textUp3">Cost Price</string>
+    <string name="textUp4">Selling Price</string>
+    <string name="textUp5">Quantity</string>
+    <string name="btnup1">Update</string>
+
+
+
+
+
+    <string name="SbtnNav1">Category</string>
+    <string name="SbtnNav2">Sales</string>
+
 
 
     <string-array name="comboboxadd1">
@@ -189,8 +198,8 @@
     <string name="textsale3">Category</string>
     <string name="textsale4">Price</string>
     <string name="textsale5">Quantity</string>
-    <string name="button3">Date</string>
     <string name="btnsale1">Add Sale</string>
+    <string name="btnList">View</string>
 
 
     <string name="upperbtnCat">Category</string>
@@ -248,5 +257,14 @@
     <string name="logo_launch">Logo_launch</string>
     <string name="the_stationery_manager">The Stationery Manager</string>
     <string name="update">Update</string>
+
+    <string name="btnSList">View</string>
+    <string name="set1">Binding</string>
+    <string name="set4">PrintOuts</string>
+    <string name="set3">Laminating</string>
+    <string name="set2">PhotoCopy</string>
+    <string name="textsale">Profit</string>
+    <string name="button3">Date</string>
+
 
 </resources>
