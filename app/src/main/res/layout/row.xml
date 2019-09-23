@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardBackgroundColor="@color/colorAccent"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:text="Date"
+                        android:textSize="20sp"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/txtDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Date name here"
+
+                        android:textColor="#000"
+                        android:textSize="20sp" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="Service name"
+                        android:textSize="20sp"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/txtSername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Service name here"
+
+                        android:textColor="#000"
+                        android:textSize="20sp" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="Category"
+                        android:textSize="20sp"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/txtCategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Category name here"
+
+                        android:textColor="#000"
+                        android:textSize="20sp" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="Price"
+                        android:textSize="20sp"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/txtPrice"
+                        android:text="Price name here"
+                        android:textSize="20sp"
+                        android:textColor="#000"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="Quantity"
+                        android:textSize="20sp"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/txtQuantity"
+                        android:text="Quantity name here"
+                        android:textSize="20sp"
+                        android:textColor="#000"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="Profit"
+                        android:textSize="20sp"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/txtProfit"
+                        android:text="Profit name here"
+                        android:textSize="20sp"
+                        android:textColor="#000"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+
+                </TableRow>
+                <TableRow>
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/deleteServiceSalesBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_marginLeft="150dp"
+                        android:layout_marginStart="100dp"
+
+                        app:srcCompat="@drawable/ic_delete"
+                        android:background="@color/colorAccent"
+                        android:text="Delete" />
+
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>
