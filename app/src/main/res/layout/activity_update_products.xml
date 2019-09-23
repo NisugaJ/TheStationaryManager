@@ -6,19 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".UpdateProducts">
 
-    <View
-        android:id="@+id/view1"
-        android:layout_width="408dp"
-        android:layout_height="126dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="8dp"
-        android:background="@color/colorAccent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.039" />
+    <!--<View-->
+        <!--android:id="@+id/view1"-->
+        <!--android:layout_width="412dp"-->
+        <!--android:layout_height="136dp"-->
+        <!--android:layout_marginTop="16dp"-->
+        <!--android:layout_marginBottom="8dp"-->
+        <!--android:background="@color/colorAccent"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintHorizontal_bias="0.333"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--app:layout_constraintVertical_bias="0.039" />-->
 
     <TextView
 
@@ -120,7 +120,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:autofillHints="@string/UPtxt2"
+        android:autofillHints=""
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -138,14 +138,14 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:autofillHints="@string/UPtxt3"
+        android:autofillHints=""
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/UPtxt2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.156" />
+        app:layout_constraintTop_toBottomOf="@+id/ufill1"
+        app:layout_constraintVertical_bias="0.019" />
 
     <EditText
         android:id="@+id/ufill3"
@@ -156,9 +156,9 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:autofillHints="@string/UPtxt4"
+        android:autofillHints=""
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="numberDecimal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/UPtxt3"
@@ -176,7 +176,7 @@
         android:layout_marginBottom="8dp"
         android:autofillHints="@string/UPtxt5"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/UPtxt4"
@@ -210,9 +210,9 @@
         android:background="@drawable/frame1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.539" />
+        app:layout_constraintVertical_bias="0.529" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
