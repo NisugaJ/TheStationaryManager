@@ -119,6 +119,7 @@ public class BindingDisplay extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialogInterface, int j) {
                 try{
+                   // Cursor cursor = mDataBaseHelper.getDataNew("SELECT * FROM RECORDNew WHERE ServiceName = '"+ currentServiceName +"';");
                     mDataBaseHelper.deleteDataNew(IDRecord);
                     Toast.makeText(BindingDisplay.this,"Deleted Successfully",Toast.LENGTH_SHORT).show();
 
@@ -154,6 +155,7 @@ public class BindingDisplay extends AppCompatActivity {
 
 
         Cursor cursor = mDataBaseHelper.getDataNew("SELECT * FROM RECORDNew WHERE ID="+position);
+
         mList.clear();
         while (cursor.moveToNext()) {
             int ID = cursor.getInt(0);
@@ -220,6 +222,7 @@ public class BindingDisplay extends AppCompatActivity {
             mList.add(new Model_new(ID,ServiceName, ServiceType, Description, CostPrice, SellingPrice, Quantity));
         }
         mAdapter.notifyDataSetChanged();
+
 
     }
 

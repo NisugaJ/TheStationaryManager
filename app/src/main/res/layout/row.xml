@@ -141,10 +141,19 @@
                         android:layout_margin="5dp"
                         android:layout_marginLeft="150dp"
                         android:layout_marginStart="100dp"
-
                         app:srcCompat="@drawable/ic_delete"
                         android:background="@color/colorAccent"
                         android:text="Delete" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/editServiceBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="130dp"
+                        android:layout_marginLeft="300dp"
+                        android:background="@color/colorPrimary"
+                        android:text="Edit"
+                        app:srcCompat="@drawable/ic_update" />
 
                 </TableRow>
 

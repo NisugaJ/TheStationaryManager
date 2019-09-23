@@ -20,7 +20,7 @@ public class AddService1 extends AppCompatActivity implements AdapterView.OnItem
 
 
     EditText nServiceType,nDescription,nCostPrice,nSellingPrice,nQuantity;
-    Button nbtnSerAdd,mbtnList;
+    Button nbtnSerAdd;
     Spinner nServiceName;
 
     public static DatabaseHelper mDataBaseHelper;
@@ -49,7 +49,7 @@ public class AddService1 extends AppCompatActivity implements AdapterView.OnItem
         nSellingPrice = (EditText)findViewById(R.id.filladd);
         nQuantity = (EditText)findViewById(R.id.filladd5);
         nbtnSerAdd = (Button)findViewById(R.id.btnadd1);
-        mbtnList = (Button)findViewById(R.id.btnSList);
+       // mbtnList = (Button)findViewById(R.id.btnSList);
 
         mDataBaseHelper = new DatabaseHelper(this, "STATIONERYDB.sqlite", null, 2);
 
@@ -61,36 +61,60 @@ public class AddService1 extends AppCompatActivity implements AdapterView.OnItem
         nbtnSerAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if (nServiceType.length() != 0 && nDescription.length() != 0 && nCostPrice.length() != 0 && nSellingPrice.length() != 0 && nQuantity.length() != 0) {
+
+                    String NumberPattern = "[1-9][0-9]*|0";
+
+                    if (nCostPrice.getText().toString().matches(NumberPattern) && nSellingPrice.getText().toString().matches(NumberPattern) && nQuantity.getText().toString().matches(NumberPattern)) {
+                        Toast.makeText(getApplicationContext(), "values are valid", Toast.LENGTH_SHORT).show();
+
                 try {
                     System.out.println(nServiceName.getSelectedItem().toString().trim());
-                    mDataBaseHelper.insertDataNew(
-                            nServiceName.getSelectedItem().toString().trim(),
-                            nServiceType.getText().toString().trim(),
-                            nDescription.getText().toString().trim(),
-                            nCostPrice.getText().toString().trim(),
-                            nSellingPrice.getText().toString().trim(),
-                            nQuantity.getText().toString().trim());
 
-                    Toast.makeText(AddService1.this, "Data Inserted ", Toast.LENGTH_LONG).show();
 
-                    nServiceName.setSelection(0);
-                    nServiceType.setText("");
-                    nDescription.setText("");
-                    nCostPrice.setText("");
-                    nSellingPrice.setText("");
-                    nQuantity.setText("");
-                } catch (Exception e) {
-                    e.printStackTrace();
+
+
+
+                        mDataBaseHelper.insertDataNew(
+                                nServiceName.getSelectedItem().toString().trim(),
+                                nServiceType.getText().toString().trim(),
+                                nDescription.getText().toString().trim(),
+                                nCostPrice.getText().toString().trim(),
+                                nSellingPrice.getText().toString().trim(),
+                                nQuantity.getText().toString().trim());
+
+                        Toast.makeText(AddService1.this, "Data Inserted ", Toast.LENGTH_LONG).show();
+
+                        nServiceName.setSelection(0);
+                        nServiceType.setText("");
+                        nDescription.setText("");
+                        nCostPrice.setText("");
+                        nSellingPrice.setText("");
+                        nQuantity.setText("");
+                    } catch(Exception e){
+                        e.printStackTrace();
+                    }
+                }else{
+
+                        Toast.makeText(AddService1.this, "Please fill with valid numbers", Toast.LENGTH_LONG).show();
+
+                    }
+
+
+
+                }else{
+                    Toast.makeText(AddService1.this, "Please fill out the empty fields", Toast.LENGTH_LONG).show();
+
                 }
             }
         });
 
-        mbtnList.setOnClickListener(new View.OnClickListener() {
+       /* mbtnList.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(AddService1.this, BindingDisplay.class));
             }
-        });
+        });*/
     }
 
 
