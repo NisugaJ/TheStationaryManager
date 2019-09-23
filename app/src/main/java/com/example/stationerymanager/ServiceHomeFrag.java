@@ -82,7 +82,7 @@ public class ServiceHomeFrag extends Fragment {    View view;
 
         salesBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(view.getContext(), ServiceAddSales.class);
+                Intent intent = new Intent(view.getContext(), AddServiceSales.class);
                 startActivity(intent);
             }
         });
