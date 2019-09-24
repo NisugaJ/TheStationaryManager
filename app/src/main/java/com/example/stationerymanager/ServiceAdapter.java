@@ -83,21 +83,22 @@ public class ServiceAdapter extends BaseAdapter {
         holder.txtProfit.setText(model.getProfit());
 
 
-     /*  holder.editServiceBtn.setOnClickListener(new View.OnClickListener() {
+      holder.editServiceBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent updateIntent = new Intent(getContext(), AddServiceSales.nDataBaseHelper.updateData());
+                Intent updateIntent = new Intent(context, ServiceSaleUpdate1.class);
                 updateIntent.putExtra("id", model.getId());
                 updateIntent.putExtra("Date", model.getDate());
                 updateIntent.putExtra("ServiceName", model.getServiceName());
                 updateIntent.putExtra("Price", model.getPrice());
                 updateIntent.putExtra("Quantity", model.getQuantity());
                 updateIntent.putExtra("Profit", model.getProfit());
+                updateIntent.putExtra("category", model.getCategory());
 
-                view.getContext().startActivity(updateIntent);
+                context.startActivity(updateIntent);
 
             }
-        });*/
+        });
 
         holder.deleteServiceSalesBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -113,13 +114,16 @@ public class ServiceAdapter extends BaseAdapter {
                                     e.printStackTrace();
                                     Log.e("CRUD error", e.toString());
                                 }
+
                             }
                         })
                         .setNegativeButton("No", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
                                 dialog.cancel();
+
                             }
                         }).show();
+
             }
         });
 

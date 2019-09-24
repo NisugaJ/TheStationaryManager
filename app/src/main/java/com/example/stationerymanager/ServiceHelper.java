@@ -46,7 +46,7 @@ public class ServiceHelper extends SQLiteOpenHelper {
 
 
 
-    public boolean updateData(String Date,String ServiceName,String Category,String price,String Quantity,String profit) {
+    public boolean updateData(String Date,String ServiceName,String Category,String price,String Quantity,String profit, int id) {
         SQLiteDatabase database = getWritableDatabase();
 
         String sql = "UPDATE RECORD SET Date=?, ServiceName=?, Category=?, price=?, Quantity=?, profit=? WHERE id=?";
@@ -59,7 +59,7 @@ public class ServiceHelper extends SQLiteOpenHelper {
         statement.bindString(4, price);
         statement.bindString(5, Quantity);
         statement.bindString(6, profit);
-        // statement.bindDouble(7,(double)id);
+         statement.bindDouble(7,(double)id);
 
         statement.execute();
         return true;
