@@ -31,8 +31,8 @@ public class AddService1 extends AppCompatActivity implements AdapterView.OnItem
         setContentView(R.layout.activity_add_service1);
         setTitle("Add Services");
 
-       ActionBar actionBar = getSupportActionBar();
-        actionBar.setTitle("New Record");
+      // ActionBar actionBar = getSupportActionBar();
+       // actionBar.setTitle("New Record");
 
 
 
