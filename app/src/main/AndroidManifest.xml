@@ -66,6 +66,9 @@
             android:name=".ServiceUpdate1"
             android:screenOrientation="portrait" />
         <activity
+            android:name=".UpdateExpense"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".Fax"
             android:screenOrientation="portrait" />
         <activity
