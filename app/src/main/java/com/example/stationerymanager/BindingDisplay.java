@@ -41,7 +41,6 @@ public class BindingDisplay extends AppCompatActivity {
 //
 //        ActionBar actionBar = getSupportActionBar();
 //        actionBar.setTitle("Record List");
-
         Intent intent = getIntent();
         String currentServiceName =  intent.getStringExtra("serviceName");
         setTitle(currentServiceName +" List");
@@ -92,6 +91,7 @@ public class BindingDisplay extends AppCompatActivity {
                             while (c.moveToNext()) {
                                 arrId.add(c.getInt(0));
                             }
+
                             showDialogUpdate(BindingDisplay.this, arrId.get(position));
                         }
                             if (j == 1){
@@ -128,6 +128,7 @@ public class BindingDisplay extends AppCompatActivity {
                     Log.e("error",e.getMessage());
                 }
                 updateRecordList();
+                recreate();
             }
         });
         dialogDelete.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
@@ -197,12 +198,19 @@ public class BindingDisplay extends AppCompatActivity {
                             position
                             );
                     dialog.dismiss();
+                    recreate();
                     Toast.makeText(getApplicationContext(),"Updated Successfully",Toast.LENGTH_SHORT).show();
+
+
                 }
                 catch (Exception error){
                     Log.e("Update error",error.getMessage());
                 }
+
+                onResume();
                 updateRecordList();
+
+
             }
         });
     }
@@ -231,4 +239,15 @@ public class BindingDisplay extends AppCompatActivity {
         Intent intent =  new Intent(BindingDisplay.this,ServiceUpdate1.class);
         startActivity(intent);
     }*/
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        recreate();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
 }
