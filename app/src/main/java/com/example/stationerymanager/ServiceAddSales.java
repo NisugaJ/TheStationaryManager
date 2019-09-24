@@ -63,8 +63,6 @@ public class ServiceAddSales extends AppCompatActivity {
             Toast.makeText(this,"No Record Found....",Toast.LENGTH_SHORT).show();
         }
 
-
-
    }
 
 
@@ -78,5 +76,11 @@ public class ServiceAddSales extends AppCompatActivity {
         super.onBackPressed();
 
         nList.clear();
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        recreate();
     }
 }

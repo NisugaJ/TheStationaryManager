@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.SpinnerAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -20,6 +21,7 @@ public class ServiceSaleUpdate1 extends AppCompatActivity implements AdapterView
     TextView SeditDate;
     Spinner SeditServiceName;
 
+
     public static ServiceHelper nDataBaseHelper;
 
     @Override
@@ -28,7 +30,9 @@ public class ServiceSaleUpdate1 extends AppCompatActivity implements AdapterView
         setContentView(R.layout.activity_service_sale_update1);
         Salebtnup1=(Button)findViewById(R.id.btnup1);
 
-        Spinner spinner = findViewById(R.id.spinneradd);
+
+
+        Spinner spinner = findViewById(R.id.Sspinneradd);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.comboboxadd1, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
@@ -42,14 +46,21 @@ public class ServiceSaleUpdate1 extends AppCompatActivity implements AdapterView
         SeditProfit = (EditText) findViewById(R.id.Sfillsale);
         Salebtnup1 = (Button) findViewById(R.id.Sbtnup1);
 
+        Intent intent = getIntent();
+        final Integer  saleID = Integer.valueOf(intent.getIntExtra("id", -999));
+        SeditDate.setText(intent.getStringExtra("Date"));
+        SeditServiceName.setSelection( adapter.getPosition(intent.getStringExtra("ServiceName")) );
+        SeditCategory.setText(intent.getStringExtra("category"));
+        SeditPrice.setText(intent.getStringExtra("Price"));
+        SeditQuantity.setText(intent.getStringExtra("Quantity"));
+        SeditProfit.setText(intent.getStringExtra("Profit"));
+
+
         nDataBaseHelper = new ServiceHelper(this, "STATIONERYDB.sqlite", null, 2);
 
         nDataBaseHelper.queryData("CREATE TABLE IF NOT EXISTS RECORD(id INTEGER PRIMARY KEY AUTOINCREMENT,Date TEXT,ServiceName VARCHAR,Category VARCHAR,price VARCHAR,Quantity VARCHAR,profit VARCHAR)");
         // nDataBaseHelper.queryData("DROP TABLE RECORD");
-        updateData();
-    }
 
-    public void updateData() {
         Salebtnup1.setOnClickListener(
                 new View.OnClickListener() {
                     public void onClick(View view) {
@@ -57,14 +68,13 @@ public class ServiceSaleUpdate1 extends AppCompatActivity implements AdapterView
                         //int selectedID = recint.getIntExtra("ID",0);
 
                         boolean isUpdated;
-                        isUpdated = nDataBaseHelper.updateData(SeditDate.getText().toString().trim(), SeditServiceName.getSelectedItem().toString().trim(), SeditCategory.getText().toString().trim(), SeditPrice.getText().toString().trim(), SeditQuantity.getText().toString().trim(), SeditProfit.getText().toString().trim());
+                        isUpdated = nDataBaseHelper.updateData(SeditDate.getText().toString().trim(), SeditServiceName.getSelectedItem().toString().trim(), SeditCategory.getText().toString().trim(), SeditPrice.getText().toString().trim(), SeditQuantity.getText().toString().trim(), SeditProfit.getText().toString().trim(), saleID );
 
                         if (SeditDate.length() != 0 && SeditCategory.length() != 0 && SeditPrice.length() != 0 && SeditQuantity.length() != 0 && SeditProfit.length() != 0) {
 
-                            if (isUpdated == true) {
+                            if (isUpdated) {
                                 Toast.makeText(getApplicationContext(), "Data Updated!", Toast.LENGTH_LONG).show();
-                                Intent intent = new Intent(ServiceSaleUpdate1.this, AddServiceSales.class);
-                                startActivity(intent);
+                                finish();
                             } else {
                                 Toast.makeText(ServiceSaleUpdate1.this, "Data Not Updated!", Toast.LENGTH_LONG).show();
                             }
@@ -76,10 +86,7 @@ public class ServiceSaleUpdate1 extends AppCompatActivity implements AdapterView
                     }
                 }
         );
-
-
-                }
-
+    }
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
