@@ -35,6 +35,7 @@ public class Stationery extends Fragment {
                              Bundle savedInstanceState) {
 
         vw = inflater.inflate(R.layout.fragment_stationery, container, false);
+        final String[] productsArr = getContext().getResources().getStringArray(R.array.combo_box1);
 
         btnNav2 = vw.findViewById(R.id.btnNav2);
         btnNav2.setOnClickListener(new View.OnClickListener() {
@@ -50,10 +51,10 @@ public class Stationery extends Fragment {
         tx.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                FragmentTransaction ft = getFragmentManager().beginTransaction();
-                ft.replace(R.id.fragment2, new BooksList());
-                ft.addToBackStack(null);
-                ft.commit();
+
+                Intent intent = new Intent(vw.getContext(), ProductListActivity.class);
+                intent.putExtra("product_type", productsArr[0] );
+                startActivity(intent);
             }
         });
 
@@ -61,10 +62,9 @@ public class Stationery extends Fragment {
         tx1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                FragmentTransaction ft2 = getFragmentManager().beginTransaction();
-                ft2.replace(R.id.fragment2, new PensList());
-                ft2.addToBackStack(null);
-                ft2.commit();
+                Intent intent = new Intent(vw.getContext(), ProductListActivity.class);
+                intent.putExtra("product_type", productsArr[1] );
+                startActivity(intent);
             }
         });
 
@@ -72,10 +72,9 @@ public class Stationery extends Fragment {
         tx2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                FragmentTransaction ft3 = getFragmentManager().beginTransaction();
-                ft3.replace(R.id.fragment2, new SchoolItemsList());
-                ft3.addToBackStack(null);
-                ft3.commit();
+                Intent intent = new Intent(vw.getContext(), ProductListActivity.class);
+                intent.putExtra("product_type", productsArr[2] );
+                startActivity(intent);
             }
         });
 
@@ -83,14 +82,11 @@ public class Stationery extends Fragment {
         tx3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                FragmentTransaction ft4 = getFragmentManager().beginTransaction();
-                ft4.replace(R.id.fragment2, new OfficeItemsList());
-                ft4.addToBackStack(null);
-                ft4.commit();
+                Intent intent = new Intent(vw.getContext(), ProductListActivity.class);
+                intent.putExtra("product_type", productsArr[3] );
+                startActivity(intent);
             }
         });
-
-
 
         addProducts = vw.findViewById(floatingActionButton_addProducts);
 
