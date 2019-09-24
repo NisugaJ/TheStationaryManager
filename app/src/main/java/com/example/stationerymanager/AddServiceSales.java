@@ -120,6 +120,7 @@ public class AddServiceSales extends AppCompatActivity implements DatePickerDial
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(AddServiceSales.this, ServiceAddSales.class));
+
             }
         });
     }

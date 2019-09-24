@@ -61,14 +61,18 @@
                         android:textColor="#000"
                         android:textSize="20sp" />
                 </TableRow>
-                <TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
                     <TextView
-                        android:text="Category"
-                        android:textSize="20sp"
-                        android:textColor="#000"
-                        android:textStyle="bold"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:text="Category"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/txtCategory"
@@ -79,6 +83,7 @@
                         android:textColor="#000"
                         android:textSize="20sp" />
                 </TableRow>
+
                 <TableRow>
                     <TextView
                         android:text="Price"
@@ -133,25 +138,30 @@
 
 
                 </TableRow>
-                <TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="21dp">
+
                     <androidx.appcompat.widget.AppCompatImageView
                         android:id="@+id/deleteServiceSalesBtn"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_width="120dp"
+                        android:layout_height="35dp"
                         android:layout_margin="5dp"
-                        android:layout_marginLeft="150dp"
                         android:layout_marginStart="100dp"
-                        app:srcCompat="@drawable/ic_delete"
+                        android:layout_marginLeft="150dp"
                         android:background="@color/colorAccent"
-                        android:text="Delete" />
+                        android:text="Delete"
+                        app:srcCompat="@drawable/ic_delete" />
 
                     <androidx.appcompat.widget.AppCompatImageView
                         android:id="@+id/editServiceBtn"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginStart="130dp"
-                        android:layout_marginLeft="300dp"
-                        android:background="@color/colorPrimary"
+                        android:layout_width="68dp"
+                        android:layout_height="34dp"
+                        android:layout_margin="5dp"
+                        android:layout_marginStart="100dp"
+                        android:layout_marginLeft="150dp"
+                        android:background="@color/colorAccent"
                         android:text="Edit"
                         app:srcCompat="@drawable/ic_update" />
 
