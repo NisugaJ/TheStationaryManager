@@ -56,15 +56,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
 
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:id="@+id/editSSalesBtn"
-                    android:layout_width="45dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="50dp"
-                    android:layout_marginLeft="250dp"
-                    android:background="@color/colorPrimary"
-                    android:text="Edit"
-                    app:srcCompat="@drawable/ic_update" />
+                <!--<androidx.appcompat.widget.AppCompatImageView-->
+                    <!--android:id="@+id/editSSalesBtn"-->
+                    <!--android:layout_width="45dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_marginStart="50dp"-->
+                    <!--android:layout_marginLeft="250dp"-->
+                    <!--android:background="@color/colorPrimary"-->
+                    <!--android:text="Edit"-->
+                    <!--app:srcCompat="@drawable/ic_update" />-->
 
             </TableRow>
             <TableRow>

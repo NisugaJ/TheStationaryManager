@@ -54,30 +54,38 @@ public class AddProducts extends AppCompatActivity implements AdapterView.OnItem
         addProduct.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                try{
-                    spDb.insertDataProduct(
-                            category.getSelectedItem().toString().trim(),
-                            pCode.getText().toString().trim(),
-                            pName.getText().toString().trim(),
-                            pCostPrice.getText().toString().trim(),
-                            pSelPrice.getText().toString().trim(),
-                            pQty.getText().toString().trim()
+                if(pCode.length() != 0 && pName.length() != 0 && pCostPrice.length() != 0 && pSelPrice.length() != 0 && pQty.length() != 0){
+                    try{
+                        spDb.insertDataProduct(
+                                category.getSelectedItem().toString().trim(),
+                                pCode.getText().toString().trim(),
+                                pName.getText().toString().trim(),
+                                pCostPrice.getText().toString().trim(),
+                                pSelPrice.getText().toString().trim(),
+                                pQty.getText().toString().trim()
 
-                    );
+                        );
 
-                    Toast.makeText(AddProducts.this, "Data Inserted ", Toast.LENGTH_LONG).show();
+                        Toast.makeText(AddProducts.this, "Data Inserted ", Toast.LENGTH_LONG).show();
 
-                    category.setSelection(0);
-                    pCode.setText("");
-                    pName.setText("");
-                    pCostPrice.setText("");
-                    pSelPrice.setText("");
-                    pQty.setText("");
+                        category.setSelection(0);
+                        pCode.setText("");
+                        pName.setText("");
+                        pCostPrice.setText("");
+                        pSelPrice.setText("");
+                        pQty.setText("");
 
+                    }
+                    catch (Exception e){
+                        e.printStackTrace();
+                    }
                 }
-                catch (Exception e){
-                    e.printStackTrace();
+
+                else {
+                    Toast.makeText(AddProducts.this, "Please fill out the empty fields", Toast.LENGTH_LONG).show();
                 }
+
+
 
             }
         });

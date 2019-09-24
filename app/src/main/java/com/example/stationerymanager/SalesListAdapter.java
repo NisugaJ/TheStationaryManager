@@ -47,7 +47,7 @@ public class SalesListAdapter extends BaseAdapter {
 
     public class ViewHolder{
         TextView txtDate, txtCode, txtName, txtPrice, txtQty;
-        ImageView editSSalesBtn, deleteSSalesBtn;
+        ImageView deleteSSalesBtn;
     }
 
     @Override
@@ -62,7 +62,6 @@ public class SalesListAdapter extends BaseAdapter {
         holder.txtName = salesrow.findViewById(R.id.txtName);
         holder.txtPrice = salesrow.findViewById(R.id.txtPrice);
         holder.txtQty = salesrow.findViewById(R.id.txtQty);
-        holder.editSSalesBtn = salesrow.findViewById(R.id.editSSalesBtn);
         holder.deleteSSalesBtn = salesrow.findViewById(R.id.deleteSSalesBtn);
 
         salesrow.setTag(holder);
@@ -80,24 +79,24 @@ public class SalesListAdapter extends BaseAdapter {
 
 
 
-        holder.editSSalesBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(context, "Hi", Toast.LENGTH_SHORT).show();
-
-
-                Intent updateSintent = new Intent(context, UpdateSales.class);
-                updateSintent.putExtra("ID", model.getID());
-                updateSintent.putExtra("DATE", model.getDATE());
-                updateSintent.putExtra("CODE", model.getCODE());
-                updateSintent.putExtra("NAME", model.getNAME());
-                updateSintent.putExtra("PRICE", model.getPRICE());
-                updateSintent.putExtra("QUANTITY", model.getQUANTITY());
-
-                context.startActivity(updateSintent);
-
-            }
-        });
+//        holder.editSSalesBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(context, "Hi", Toast.LENGTH_SHORT).show();
+//
+//
+//                Intent updateSintent = new Intent(context, UpdateSales.class);
+//                updateSintent.putExtra("ID", model.getID());
+//                updateSintent.putExtra("DATE", model.getDATE());
+//                updateSintent.putExtra("CODE", model.getCODE());
+//                updateSintent.putExtra("NAME", model.getNAME());
+//                updateSintent.putExtra("PRICE", model.getPRICE());
+//                updateSintent.putExtra("QUANTITY", model.getQUANTITY());
+//
+//                context.startActivity(updateSintent);
+//
+//            }
+//        });
 
 
 

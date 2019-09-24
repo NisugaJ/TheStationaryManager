@@ -60,11 +60,6 @@
             android:name=".LaminatingDisplay"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".FCHistory"
-            android:label="@string/title_activity_fchistory"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".ServiceUpdate1"
             android:screenOrientation="portrait" />
         <activity
