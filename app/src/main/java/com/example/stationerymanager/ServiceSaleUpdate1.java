@@ -28,6 +28,7 @@ public class ServiceSaleUpdate1 extends AppCompatActivity implements AdapterView
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_service_sale_update1);
+        setTitle("Sale Update");
         Salebtnup1=(Button)findViewById(R.id.btnup1);
 
 

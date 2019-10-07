@@ -38,6 +38,7 @@ public class BindingDisplay extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_binding_display);
 
+
 //
 //        ActionBar actionBar = getSupportActionBar();
 //        actionBar.setTitle("Record List");
