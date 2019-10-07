@@ -9,7 +9,9 @@
         android:roundIcon="@drawable/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ServiceSaleUpdate1"></activity>
+        <activity android:name=".ProductListActivity"></activity>
+        <activity android:name=".UpdateSales" />
+        <activity android:name=".ServiceSaleUpdate1" />
         <activity android:name=".UpdateSalesActivity" />
         <activity android:name=".SalesListActivity" />
         <activity
@@ -57,11 +59,6 @@
         <activity
             android:name=".LaminatingDisplay"
             android:screenOrientation="portrait" />
-        <activity
-            android:name=".FCHistory"
-            android:label="@string/title_activity_fchistory"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ServiceUpdate1"
             android:screenOrientation="portrait" />

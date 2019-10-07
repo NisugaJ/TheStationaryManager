@@ -32,7 +32,8 @@ public class AddSales extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_sales);
         getSupportActionBar().setTitle("Add Sales");
-        myDb = new StationarySalesDatabaseHelper(this);
+
+        myDb = new StationarySalesDatabaseHelper(this, "Stationery.db", null, 1);
 
 
         etDate = findViewById(R.id.editText3);
@@ -77,19 +78,29 @@ public class AddSales extends AppCompatActivity{
         addSalesBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                boolean isInserted = myDb.insertData(etDate.getText().toString(),
-                                sCode.getText().toString(),
-                                sName.getText().toString(),
-                                sPrice.getText().toString(),
-                                sQty.getText().toString());
+                if (sCode.length() != 0 && sName.length() != 0 && sPrice.length() != 0 && sQty.length() != 0){
 
-                if (isInserted == true){
-                    Toast.makeText(AddSales.this, "Data Inserted", Toast.LENGTH_SHORT).show();
+                    boolean isInserted = myDb.insertData(
+                            etDate.getText().toString(),
+                            sCode.getText().toString(),
+                            sName.getText().toString(),
+                            sPrice.getText().toString(),
+                            sQty.getText().toString());
+
+                    if (isInserted == true){
+                        Toast.makeText(AddSales.this, "Data Inserted", Toast.LENGTH_SHORT).show();
+                    }
+                    else {
+                        Toast.makeText(AddSales.this, "Data not Inserted", Toast.LENGTH_SHORT).show();
+
+                    }
                 }
+
                 else {
-                    Toast.makeText(AddSales.this, "Data not Inserted", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(AddSales.this, "Please fill out the empty fields", Toast.LENGTH_LONG).show();
 
                 }
+
             }
         });
     }

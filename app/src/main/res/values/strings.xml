@@ -244,10 +244,15 @@
     <string name="btnFCHistory">History</string>
 
     <string name="btnAddFax">Add</string>
-    <string name="btnCancelFax">Cancel</string>
+    <string name="btnAllFax">Select ALL</string>
+    <string name="btnUpdateFax">Update</string>
+    <string name="btnDeleteFax">Delete</string>
 
     <string name="btnAddCall">Add</string>
-    <string name="btnCancelCall">Cancel</string>
+    <string name="btnAllCall">Selete All</string>
+    <string name="btnUpdateCall">Update</string>
+    <string name="btnDeleteCall">Delete</string>
+
     <string name="title_activity_fchistory">FCHistory</string>
     <string name="logo_launch">Logo_launch</string>
     <string name="the_stationery_manager">The Stationery Manager</string>

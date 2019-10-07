@@ -6,23 +6,23 @@
     android:layout_height="match_parent"
     tools:context=".AddProducts">
 
-    <Button
-        android:id="@+id/PAbtn"
-        android:layout_width="271dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/rounded_button"
-        android:text="@string/PAbtn"
-        android:textColor="@color/btnColorFont"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/PAbtn1"
-        tools:text="@string/PAbtn" />
+    <!--<Button-->
+    <!--android:id="@+id/PAbtn"-->
+    <!--android:layout_width="321dp"-->
+    <!--android:layout_height="48dp"-->
+    <!--android:layout_marginStart="8dp"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:layout_marginEnd="8dp"-->
+    <!--android:layout_marginBottom="8dp"-->
+    <!--android:background="@drawable/rounded_button"-->
+    <!--android:text="@string/PAbtn"-->
+    <!--android:textColor="@color/btnColorFont"-->
+    <!--android:textSize="18sp"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/PAbtn1"-->
+    <!--tools:text="@string/PAbtn" />-->
 
     <View
         android:id="@+id/view1"
@@ -102,8 +102,8 @@
 
     <TextView
         android:id="@+id/tx"
-        android:layout_width="394dp"
-        android:layout_height="128dp"
+        android:layout_width="392dp"
+        android:layout_height="140dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
@@ -129,7 +129,7 @@
         app:layout_constraintHorizontal_bias="0.062"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.524"
+        app:layout_constraintVertical_bias="0.53"
         tools:text="@string/PAtxt4" />
 
     <TextView
@@ -162,8 +162,8 @@
 
     <Button
         android:id="@+id/PAbtn1"
-        android:layout_width="271dp"
-        android:layout_height="46dp"
+        android:layout_width="321dp"
+        android:layout_height="48dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -174,9 +174,10 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.883"
+        app:layout_constraintVertical_bias="0.908"
         tools:text="@string/PAbtn1" />
 
     <EditText
@@ -230,13 +231,13 @@
         android:layout_marginBottom="8dp"
         android:autofillHints=""
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.301"
         app:layout_constraintStart_toEndOf="@+id/PAtxt4"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.511" />
+        app:layout_constraintVertical_bias="0.523" />
 
     <EditText
         android:id="@+id/PAfill4"
@@ -249,13 +250,13 @@
         android:layout_marginBottom="8dp"
         android:autofillHints=""
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.301"
         app:layout_constraintStart_toEndOf="@+id/PAtxt5"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.614" />
+        app:layout_constraintVertical_bias="0.62" />
 
     <EditText
         android:id="@+id/PAfill5"
@@ -274,7 +275,7 @@
         app:layout_constraintHorizontal_bias="0.301"
         app:layout_constraintStart_toEndOf="@+id/PAtxt6"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.704" />
+        app:layout_constraintVertical_bias="0.722" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
