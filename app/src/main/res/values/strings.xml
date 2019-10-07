@@ -73,7 +73,6 @@
     <string name="SAbtn1">Add Sales</string>
 
 
-
     <string name="UPtxt2">Product Name</string>
     <string name="UPtxt3">Product Code</string>
     <string name="UPtxt4">Cost Price</string>
@@ -178,12 +177,8 @@
     <string name="btnup1">Update</string>
 
 
-
-
-
     <string name="SbtnNav1">Category</string>
     <string name="SbtnNav2">Sales</string>
-
 
 
     <string-array name="comboboxadd1">
@@ -249,10 +244,15 @@
     <string name="btnFCHistory">History</string>
 
     <string name="btnAddFax">Add</string>
-    <string name="btnCancelFax">Cancel</string>
+    <string name="btnAllFax">Select ALL</string>
+    <string name="btnUpdateFax">Update</string>
+    <string name="btnDeleteFax">Delete</string>
 
     <string name="btnAddCall">Add</string>
-    <string name="btnCancelCall">Cancel</string>
+    <string name="btnAllCall">Selete All</string>
+    <string name="btnUpdateCall">Update</string>
+    <string name="btnDeleteCall">Delete</string>
+
     <string name="title_activity_fchistory">FCHistory</string>
     <string name="logo_launch">Logo_launch</string>
     <string name="the_stationery_manager">The Stationery Manager</string>
@@ -266,7 +266,7 @@
     <string name="textsale">Profit</string>
     <string name="button3">Date</string>
 
-//Conflict Resolved strings
+    //Conflict Resolved strings
     <string name="SAbtn">Sales List</string>
     <string name="SAbtn11">Update Sale</string>
 

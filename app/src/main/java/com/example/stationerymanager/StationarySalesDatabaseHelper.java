@@ -20,9 +20,14 @@ public class StationarySalesDatabaseHelper extends SQLiteOpenHelper {
 
 
 
-    public StationarySalesDatabaseHelper(Context context) {
+    public StationarySalesDatabaseHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, DATABASE_NAME, null, 1);
 
+    }
+
+    public void queryDataSales(String sql){
+        SQLiteDatabase database = getWritableDatabase();
+        database.execSQL(sql);
     }
 
     @Override
@@ -60,7 +65,7 @@ public class StationarySalesDatabaseHelper extends SQLiteOpenHelper {
     }
 
 
-    public void updateData(String DATE, String CODE, String NAME, String PRICE, String QUANTITY, String ID){
+    public boolean updateData(String DATE, String CODE, String NAME, String PRICE, String QUANTITY, String ID){
         SQLiteDatabase db = this.getWritableDatabase();
 
         String sql = "UPDATE " + TABLE_NAME + " SET DATE=?, CODE=?, NAME=?, PRICE=?, QUANTITY=? WHERE ID=?";
@@ -76,6 +81,7 @@ public class StationarySalesDatabaseHelper extends SQLiteOpenHelper {
 
         statement.execute();
         db.close();
+        return true;
     }
 
 

@@ -2,6 +2,7 @@ package com.example.stationerymanager;
 
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -44,13 +45,13 @@ public class ServiceAdapter extends BaseAdapter {
 
     private class ViewHolder {
         TextView txtDate, txtSername, txtCategory, txtPrice, txtQuantity, txtProfit;
-       ImageView deleteServiceSalesBtn;
+       ImageView deleteServiceSalesBtn,editServiceBtn;
     }
 
 
 
     @Override
-    public View getView(int i, View view, ViewGroup viewGroup) {
+    public View getView(int i, final View view, ViewGroup viewGroup) {
 
         View row = view;
         ViewHolder holder = new ViewHolder();
@@ -65,6 +66,7 @@ public class ServiceAdapter extends BaseAdapter {
             holder.txtQuantity = row.findViewById(R.id.txtQuantity);
             holder.txtProfit = row.findViewById(R.id.txtProfit);
             holder.deleteServiceSalesBtn = row.findViewById(R.id.deleteServiceSalesBtn);
+            holder.editServiceBtn = row.findViewById(R.id.editServiceBtn);
 
             row.setTag(holder);
 
@@ -80,6 +82,24 @@ public class ServiceAdapter extends BaseAdapter {
         holder.txtQuantity.setText(model.getQuantity());
         holder.txtProfit.setText(model.getProfit());
 
+
+      holder.editServiceBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent updateIntent = new Intent(context, ServiceSaleUpdate1.class);
+                updateIntent.putExtra("id", model.getId());
+                updateIntent.putExtra("Date", model.getDate());
+                updateIntent.putExtra("ServiceName", model.getServiceName());
+                updateIntent.putExtra("Price", model.getPrice());
+                updateIntent.putExtra("Quantity", model.getQuantity());
+                updateIntent.putExtra("Profit", model.getProfit());
+                updateIntent.putExtra("category", model.getCategory());
+
+                context.startActivity(updateIntent);
+
+            }
+        });
+
         holder.deleteServiceSalesBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -94,13 +114,16 @@ public class ServiceAdapter extends BaseAdapter {
                                     e.printStackTrace();
                                     Log.e("CRUD error", e.toString());
                                 }
+
                             }
                         })
                         .setNegativeButton("No", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
                                 dialog.cancel();
+
                             }
                         }).show();
+
             }
         });
 

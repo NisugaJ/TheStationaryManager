@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -23,6 +24,7 @@ public class ServiceAddSales extends AppCompatActivity {
     ArrayList<Model> nList;
     ServiceAdapter nAdapter = null;
     public static ServiceHelper nDataBaseHelper;
+    ArrayAdapter SpinnerAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,36 +57,13 @@ public class ServiceAddSales extends AppCompatActivity {
             Log.e("DB error", e.toString());
         }
 
+
         nAdapter.notifyDataSetChanged();
         if (nList.size() == 0) {
             Toast.makeText(this,"No Record Found....",Toast.LENGTH_SHORT).show();
         }
 
-       /* nListView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
-            @Override
-            public boolean onItemLongClick(AdapterView<?> adapterView, View view, final int position, long id) {
-
-                final int which_item = position;
-
-                new AlertDialog.Builder(ServiceAddSales.this)
-                        .setIcon(android.R.drawable.ic_delete)
-                        . setTitle("Are you sure?")
-                        .setMessage("Do you Want to delete this item")
-                        .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                Toast.makeText(getApplicationContext(), "Inside Deleted",Toast.LENGTH_SHORT).show();
-                                nDataBaseHelper.deleteData();
-                               Toast.makeText(getApplicationContext(), "Deleted successfully "+position,Toast.LENGTH_SHORT).show();
-                                nAdapter.notifyDataSetChanged();
-                            }
-                        })
-                        .setNegativeButton("No",null)
-                        .show();
-                return true;
-            }
-        });
-  */ }
+   }
 
 
     public void addSales(View view){
@@ -97,5 +76,11 @@ public class ServiceAddSales extends AppCompatActivity {
         super.onBackPressed();
 
         nList.clear();
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        recreate();
     }
 }

@@ -18,7 +18,7 @@ public class faxCalls extends Fragment {
     private View view;
     private Button call;
     private Button fax;
-    private Button history;
+
 
     @NonNull
     @Override
@@ -27,7 +27,7 @@ public class faxCalls extends Fragment {
         view = inflater.inflate(R.layout.fragment_fax_calls, container, false);
         call = view.findViewById(R.id.call);
         fax = view.findViewById(R.id.fax);
-        history = view.findViewById(R.id.FCHistory);
+
 
 
         return view;
@@ -46,12 +46,6 @@ public class faxCalls extends Fragment {
         fax.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(view.getContext(),Fax.class);
-                startActivity(intent);
-            }
-        });
-        history.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Intent intent = new Intent(view.getContext(),FCHistory.class);
                 startActivity(intent);
             }
         });

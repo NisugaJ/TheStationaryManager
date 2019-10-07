@@ -5,7 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UpdateProducts">
+    android:layout_gravity="center"
+    android:id="@+id/ppupdate_dialog">
 
     <View
         android:id="@+id/view1"

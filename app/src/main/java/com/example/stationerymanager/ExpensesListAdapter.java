@@ -56,7 +56,7 @@ public class ExpensesListAdapter extends ArrayAdapter<ExpenseModel> {
         timeView.setText(expenseItem.getTimestamp());
         amountView.setText(expenseItem.getAmount());
 
-        update.setOnClickListener(new View.OnClickListener() {
+        update.setOnClickListener(  new View.OnClickListener() {
               @Override
               public void onClick(View view) {
                   Intent updateIntent = new Intent(getContext(), UpdateExpense.class);
