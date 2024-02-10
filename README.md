@@ -1,4 +1,4 @@
-"# TheStationeryManager" - Android App
+# StationeryManager - Android App
 
 1. Stationery Management
 
