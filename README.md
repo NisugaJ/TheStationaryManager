@@ -1,4 +1,4 @@
-# StationeryManager - Android App
+# StationaryManager - Android App
 
 1. Stationery Management
 
